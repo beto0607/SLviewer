@@ -1,6 +1,12 @@
-import type { DepartureEntry } from "./api.types"
-
-export type DepartureEntryListItem = DepartureEntry & {
-    relativeTime: string
-    icon: string
+export type DepartureEntryListItem = {
+    gone: boolean;
+    name: string;
+    line: string;
+    relativeTime: string;
+    icon: string;
+    materialIcon: string;
+    transportType: string
+    direction: string
+    time: string
+    date: string
 }
