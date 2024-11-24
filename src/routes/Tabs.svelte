@@ -2,7 +2,7 @@
 	import type { TabItem } from '../domain/internal.types';
 
 	export let items: TabItem[] = [];
-	export let activeTabValue = 1;
+	export let activeTabValue = 0;
 
 	const handleClick = (tabValue: number) => () => (activeTabValue = tabValue);
 </script>

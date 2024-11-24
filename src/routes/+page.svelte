@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { swipe, type SwipeCustomEvent } from 'svelte-gestures';
 	import { type DepartureBoard } from '../domain/api.types';
 	import type { DepartureEntryListItem, TabItem } from '../domain/internal.types';
 	import { getTabComponents, mapDeparturesToListItems, updateDepartureTimes } from '../utils';
@@ -10,6 +11,7 @@
 	let time = $state(new Date());
 
 	let items = $state<TabItem[]>(getTabComponents());
+	let activeTabItem = $state(0);
 
 	let fullscreenActive = $state(false);
 	let fullscreenEnabled = $state(false);
@@ -97,6 +99,20 @@
 		}
 		fullscreenActive = !!window.document.fullscreenElement;
 	}
+
+	function swipeHandler(event: Event): void {
+		if (event.type !== 'swipe') {
+			return;
+		}
+
+		const detail = (event as SwipeCustomEvent).detail;
+
+		if (detail.direction === 'right') {
+			activeTabItem = Math.max(0, activeTabItem - 1);
+		} else if (detail.direction === 'left') {
+			activeTabItem = Math.min(items.length - 1, activeTabItem + 1);
+		}
+	}
 </script>
 
 <header>
@@ -120,8 +136,9 @@
 		{/if}
 	</div>
 </header>
-<section>
-	<Tabs {items} />
+
+<section class="main" use:swipe={{ timeframe: 300, minSwipeDistance: 100 }} onswipe={swipeHandler}>
+	<Tabs {items} activeTabValue={activeTabItem} />
 	{#if loading}
 		<div class="loader">🚆 🫶 🚌</div>
 	{/if}
@@ -157,6 +174,10 @@
 		justify-content: center;
 		grid-template-columns: 30% 1fr 30%;
 
+		.center {
+			display: flex;
+			justify-content: center;
+		}
 		.right {
 			display: flex;
 			justify-content: flex-end;
@@ -189,6 +210,9 @@
 				}
 			}
 		}
+	}
+	section.main {
+		height: calc(100vh - 98px);
 	}
 
 	.loader {
