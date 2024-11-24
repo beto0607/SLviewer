@@ -1,6 +1,7 @@
 import dayjs from 'dayjs';
 import relativeTime from 'dayjs/plugin/relativeTime';
 import { type DepartureEntry, CLSEnum } from "../domain/api.types";
+import type { DepartureEntryListItem } from '../domain/internal.types';
 
 dayjs.extend(relativeTime);
 
@@ -58,7 +59,7 @@ export function getMaterialIcon(departure: DepartureEntry): string {
             return 'question_mark';
     }
 }
-export function getTransportType(departure: DepartureEntry): string {
+export function getTransportType(departure: DepartureEntry): DepartureEntryListItem['transportType'] {
     const product = departure.Product.at(0);
     switch (product?.cls) {
         case CLSEnum.Airplanes:

@@ -1,13 +1,25 @@
 <script lang="ts">
 	import { type DepartureBoard } from '../domain/api.types';
-	import type { DepartureEntryListItem } from '../domain/internal.types';
-	import { mapDeparturesToListItems, updateDepartureTimes } from '../utils';
+	import type { DepartureEntryListItem, TabItem } from '../domain/internal.types';
+	import { getTabComponents, mapDeparturesToListItems, updateDepartureTimes } from '../utils';
+	import Tabs from './Tabs.svelte';
 
 	let loading = $state(true);
 	let departures: DepartureEntryListItem[] = $state([]);
 
 	let time = $state(new Date());
 
+	let items = $state<TabItem[]>(getTabComponents());
+
+	let fullscreenActive = $state(false);
+	let fullscreenEnabled = $state(false);
+
+	$effect(() => {
+		fullscreenEnabled = window.document.fullscreenEnabled;
+		setTimeout(() => {
+			fullscreen();
+		});
+	});
 	$effect(() => {
 		const interval = setInterval(() => {
 			time = new Date();
@@ -48,10 +60,14 @@
 		fetch(getURL())
 			.then((response) => response.json())
 			.then((departuresResponse: DepartureBoard) => {
-				setTimeout(() => {
-					departures = mapDeparturesToListItems(departuresResponse.Departure);
-					loading = false;
-				}, 2000);
+				departures = mapDeparturesToListItems(departuresResponse.Departure);
+
+				const trainDepartures = departures.filter(({ transportType }) => transportType === 'Train');
+				const otherDepartures = departures.filter(({ transportType }) => transportType !== 'Train');
+
+				items = getTabComponents(trainDepartures, otherDepartures);
+
+				loading = false;
 			});
 	}
 
@@ -64,6 +80,22 @@
 		const spangaId = '740000764';
 		const resRobotKey = import.meta.env.VITE_RESROBOT_KEY;
 		return `https://api.resrobot.se/v2.1/departureBoard?id=${spangaId}&lang=en&format=json&accessId=${resRobotKey}`;
+	}
+
+	async function fullscreen(): Promise<void> {
+		if (!fullscreenEnabled) {
+			return;
+		}
+		if (!fullscreenActive) {
+			try {
+				await window.document.body.requestFullscreen();
+			} catch {
+				/* empty */
+			}
+		} else {
+			await window.document.exitFullscreen();
+		}
+		fullscreenActive = !!window.document.fullscreenElement;
 	}
 </script>
 
@@ -79,34 +111,20 @@
 		<button onclick={syncData} class={loading ? 'loading' : ''}>
 			<span class="material-symbols-outlined">sync</span>
 		</button>
+		{#if fullscreenEnabled}
+			<button onclick={fullscreen}>
+				<span class="material-symbols-outlined"
+					>{fullscreenActive ? 'fullscreen_exit' : 'fullscreen'}</span
+				>
+			</button>
+		{/if}
 	</div>
 </header>
 <section>
+	<Tabs {items} />
 	{#if loading}
 		<div class="loader">🚆 🫶 🚌</div>
 	{/if}
-	<ul>
-		{#each departures as departure}
-			<li class={departure.gone ? 'gone' : 'arriving'}>
-				<div class="departure-type">
-					<span class="icon material-symbols-outlined">{departure.materialIcon}</span>
-					<span class="type">{departure.transportType}</span>
-				</div>
-				<div class="title">
-					<strong>{departure.line}</strong>
-					<span> {departure.relativeTime} </span>
-				</div>
-				<div class="direction">
-					<span> ➡️ {departure.direction}</span>
-				</div>
-				<div class="date">
-					<span> {departure.time} </span>
-					<br />
-					<span> {departure.date} </span>
-				</div>
-			</li>
-		{/each}
-	</ul>
 </section>
 
 <style lang="scss">
@@ -116,6 +134,11 @@
 		user-select: none; /* Standard syntax */
 		cursor: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjbQg61aAAAADUlEQVQYV2P4//8/IwAI/QL/+TZZdwAAAABJRU5ErkJggg=='),
 			none;
+	}
+	:global(button) {
+		background: transparent;
+		border: none;
+		outline: none;
 	}
 
 	@font-face {
@@ -132,7 +155,7 @@
 		display: grid;
 		border-bottom: 2px solid #999;
 		justify-content: center;
-		grid-template-columns: 30% auto 30%;
+		grid-template-columns: 30% 1fr 30%;
 
 		.right {
 			display: flex;
@@ -145,6 +168,7 @@
 			}
 
 			button {
+				margin: auto 4px;
 				background: transparent;
 				border: none;
 				outline: none;
@@ -197,64 +221,6 @@
 		}
 		to {
 			transform: scale(3);
-		}
-	}
-	ul {
-		padding: 10px;
-		list-style: none;
-		justify-content: center;
-		align-items: center;
-		display: grid;
-		grid-template-columns: 50% 50%;
-		column-gap: 15px;
-
-		li {
-			margin-bottom: 10px;
-			width: auto;
-			padding: 1.5em;
-			border-radius: 8px;
-			background-color: #0f3539;
-
-			display: grid;
-			grid-template-columns: 50px auto 100px;
-			grid-template-rows: 100px 40px;
-			column-gap: 15px;
-
-			&.gone {
-				opacity: 0.4;
-			}
-
-			.direction {
-				grid-row: 2;
-				font-size: 20px;
-			}
-
-			.departure-type {
-				grid-row: 1/-1;
-				grid-column: 1;
-				place-self: center;
-				color: white;
-				text-align: center;
-
-				.type {
-					display: block;
-					margin-top: 12px;
-					font-size: 30px;
-				}
-				.icon {
-					height: 40px;
-					font-size: 60px;
-				}
-			}
-			.title {
-				grid-row: 1;
-				font-size: 32px;
-				align-self: center;
-			}
-			.date {
-				grid-row: -2;
-				grid-column: 3;
-			}
 		}
 	}
 </style>

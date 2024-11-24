@@ -2,7 +2,7 @@
     "Departure": [
         {
             "JourneyDetailRef": {
-                "ref": "1|41452|0|1|23112024"
+                "ref": "1|100892|2|1|24112024"
             },
             "JourneyStatus": "P",
             "ProductAtStop": {
@@ -16,22 +16,22 @@
                     "nameL": "SL",
                     "id": "275"
                 },
-                "name": "Länstrafik - Buss 118",
-                "internalName": "Länstrafik - Buss 118",
-                "displayNumber": "118",
-                "num": "118",
-                "line": "118",
-                "lineId": "1275011800001",
-                "catOut": "BLT",
-                "catIn": "BLT",
-                "catCode": "7",
-                "cls": "128",
-                "catOutS": "BLT",
-                "catOutL": "Länstrafik - Buss",
+                "name": "Länstrafik - Tåg 43",
+                "internalName": "Länstrafik - Tåg 43",
+                "displayNumber": "43",
+                "num": "43",
+                "line": "43",
+                "lineId": "1275000000001",
+                "catOut": "JLT",
+                "catIn": "JLT",
+                "catCode": "4",
+                "cls": "16",
+                "catOutS": "JLT",
+                "catOutL": "Länstrafik - Tåg",
                 "operatorCode": "275",
                 "operator": "SL",
                 "admin": "275___",
-                "matchId": "118;118;114"
+                "matchId": "T24C001 BÅL-NYH LT;T24C001 BÅL-NYH LT;2834"
             },
             "Product": [
                 {
@@ -45,234 +45,70 @@
                         "nameL": "SL",
                         "id": "275"
                     },
-                    "name": "Länstrafik - Buss 118",
-                    "internalName": "Länstrafik - Buss 118",
-                    "displayNumber": "118",
-                    "num": "118",
-                    "line": "118",
-                    "lineId": "1275011800001",
-                    "catOut": "BLT",
-                    "catIn": "BLT",
-                    "catCode": "7",
-                    "cls": "128",
-                    "catOutS": "BLT",
-                    "catOutL": "Länstrafik - Buss",
+                    "name": "Länstrafik - Tåg 43",
+                    "internalName": "Länstrafik - Tåg 43",
+                    "displayNumber": "43",
+                    "num": "43",
+                    "line": "43",
+                    "lineId": "1275000000001",
+                    "catOut": "JLT",
+                    "catIn": "JLT",
+                    "catCode": "4",
+                    "cls": "16",
+                    "catOutS": "JLT",
+                    "catOutL": "Länstrafik - Tåg",
                     "operatorCode": "275",
                     "operator": "SL",
                     "admin": "275___",
-                    "routeIdxFrom": 12,
-                    "routeIdxTo": 27,
-                    "matchId": "118;118;114"
+                    "routeIdxFrom": 21,
+                    "routeIdxTo": 25,
+                    "matchId": "T24C001 BÅL-NYH LT;T24C001 BÅL-NYH LT;2834"
                 }
             ],
             "Notes": {
                 "Note": [
                     {
+                        "value": "Endast 2 klass",
+                        "key": "AA",
+                        "type": "A",
+                        "routeIdxFrom": 21,
+                        "routeIdxTo": 25,
+                        "txtN": "Endast 2 klass"
+                    },
+                    {
                         "value": "Lag 2015:953 tillämpas",
                         "key": "EG",
                         "type": "A",
-                        "routeIdxFrom": 12,
-                        "routeIdxTo": 27,
+                        "routeIdxFrom": 21,
+                        "routeIdxTo": 25,
                         "txtN": "Lag 2015:953 tillämpas"
+                    },
+                    {
+                        "value": "Pendeltåg",
+                        "key": "VH",
+                        "type": "A",
+                        "routeIdxFrom": 21,
+                        "routeIdxTo": 25,
+                        "txtN": "Pendeltåg"
                     }
                 ]
             },
-            "name": "Länstrafik - Buss 118",
+            "name": "Länstrafik - Tåg 43",
             "type": "ST",
             "stop": "Spånga station (Stockholm kn)",
             "stopid": "A=1@O=Spånga station (Stockholm kn)@X=17898781@Y=59383271@U=1@L=740000764@",
             "stopExtId": "740000764",
             "lon": 17.898781,
             "lat": 59.383271,
-            "time": "01:30:00",
-            "date": "2024-11-23",
+            "time": "12:55:00",
+            "date": "2024-11-24",
             "reachable": true,
-            "direction": "Hallonbergen T-bana (Sundbyberg kn)",
+            "direction": "Kungsängen station (Upplands Bro kn)",
             "directionFlag": "2"
         },
         {
             "JourneyDetailRef": {
-                "ref": "1|55234|1|1|23112024"
-            },
-            "JourneyStatus": "P",
-            "ProductAtStop": {
-                "icon": {
-                    "res": "prod_gen"
-                },
-                "operatorInfo": {
-                    "name": "SL",
-                    "nameS": "275",
-                    "nameN": "275",
-                    "nameL": "SL",
-                    "id": "275"
-                },
-                "name": "Länstrafik - Buss 112",
-                "internalName": "Länstrafik - Buss 112",
-                "displayNumber": "112",
-                "num": "112",
-                "line": "112",
-                "lineId": "1275011200001",
-                "catOut": "BLT",
-                "catIn": "BLT",
-                "catCode": "7",
-                "cls": "128",
-                "catOutS": "BLT",
-                "catOutL": "Länstrafik - Buss",
-                "operatorCode": "275",
-                "operator": "SL",
-                "admin": "275___",
-                "matchId": "112;112;111"
-            },
-            "Product": [
-                {
-                    "icon": {
-                        "res": "prod_gen"
-                    },
-                    "operatorInfo": {
-                        "name": "SL",
-                        "nameS": "275",
-                        "nameN": "275",
-                        "nameL": "SL",
-                        "id": "275"
-                    },
-                    "name": "Länstrafik - Buss 112",
-                    "internalName": "Länstrafik - Buss 112",
-                    "displayNumber": "112",
-                    "num": "112",
-                    "line": "112",
-                    "lineId": "1275011200001",
-                    "catOut": "BLT",
-                    "catIn": "BLT",
-                    "catCode": "7",
-                    "cls": "128",
-                    "catOutS": "BLT",
-                    "catOutL": "Länstrafik - Buss",
-                    "operatorCode": "275",
-                    "operator": "SL",
-                    "admin": "275___",
-                    "routeIdxFrom": 0,
-                    "routeIdxTo": 19,
-                    "matchId": "112;112;111"
-                }
-            ],
-            "Notes": {
-                "Note": [
-                    {
-                        "value": "Lag 2015:953 tillämpas",
-                        "key": "EG",
-                        "type": "A",
-                        "routeIdxFrom": 0,
-                        "routeIdxTo": 19,
-                        "txtN": "Lag 2015:953 tillämpas"
-                    }
-                ]
-            },
-            "name": "Länstrafik - Buss 112",
-            "type": "ST",
-            "stop": "Spånga station (Stockholm kn)",
-            "stopid": "A=1@O=Spånga station (Stockholm kn)@X=17898781@Y=59383271@U=1@L=740000764@",
-            "stopExtId": "740000764",
-            "lon": 17.898781,
-            "lat": 59.383271,
-            "time": "01:31:00",
-            "date": "2024-11-23",
-            "reachable": true,
-            "direction": "Alvik T-bana (Stockholm kn)",
-            "directionFlag": "1"
-        },
-        {
-            "JourneyDetailRef": {
-                "ref": "1|117881|1|1|23112024"
-            },
-            "JourneyStatus": "P",
-            "ProductAtStop": {
-                "icon": {
-                    "res": "prod_gen"
-                },
-                "operatorInfo": {
-                    "name": "SL",
-                    "nameS": "275",
-                    "nameN": "275",
-                    "nameL": "SL",
-                    "id": "275"
-                },
-                "name": "Länstrafik - Buss 116",
-                "internalName": "Länstrafik - Buss 116",
-                "displayNumber": "116",
-                "num": "116",
-                "line": "116",
-                "lineId": "1275011600001",
-                "catOut": "BLT",
-                "catIn": "BLT",
-                "catCode": "7",
-                "cls": "128",
-                "catOutS": "BLT",
-                "catOutL": "Länstrafik - Buss",
-                "operatorCode": "275",
-                "operator": "SL",
-                "admin": "275___",
-                "matchId": "116;116;169"
-            },
-            "Product": [
-                {
-                    "icon": {
-                        "res": "prod_gen"
-                    },
-                    "operatorInfo": {
-                        "name": "SL",
-                        "nameS": "275",
-                        "nameN": "275",
-                        "nameL": "SL",
-                        "id": "275"
-                    },
-                    "name": "Länstrafik - Buss 116",
-                    "internalName": "Länstrafik - Buss 116",
-                    "displayNumber": "116",
-                    "num": "116",
-                    "line": "116",
-                    "lineId": "1275011600001",
-                    "catOut": "BLT",
-                    "catIn": "BLT",
-                    "catCode": "7",
-                    "cls": "128",
-                    "catOutS": "BLT",
-                    "catOutL": "Länstrafik - Buss",
-                    "operatorCode": "275",
-                    "operator": "SL",
-                    "admin": "275___",
-                    "routeIdxFrom": 0,
-                    "routeIdxTo": 19,
-                    "matchId": "116;116;169"
-                }
-            ],
-            "Notes": {
-                "Note": [
-                    {
-                        "value": "Lag 2015:953 tillämpas",
-                        "key": "EG",
-                        "type": "A",
-                        "routeIdxFrom": 0,
-                        "routeIdxTo": 19,
-                        "txtN": "Lag 2015:953 tillämpas"
-                    }
-                ]
-            },
-            "name": "Länstrafik - Buss 116",
-            "type": "ST",
-            "stop": "Spånga station (Stockholm kn)",
-            "stopid": "A=1@O=Spånga station (Stockholm kn)@X=17898781@Y=59383271@U=1@L=740000764@",
-            "stopExtId": "740000764",
-            "lon": 17.898781,
-            "lat": 59.383271,
-            "time": "01:31:00",
-            "date": "2024-11-23",
-            "reachable": true,
-            "direction": "Vällingby T-bana (Stockholm kn)",
-            "directionFlag": "1"
-        },
-        {
-            "JourneyDetailRef": {
-                "ref": "1|41438|1|1|23112024"
+                "ref": "1|41356|0|1|24112024"
             },
             "JourneyStatus": "P",
             "ProductAtStop": {
@@ -301,7 +137,7 @@
                 "operatorCode": "275",
                 "operator": "SL",
                 "admin": "275___",
-                "matchId": "118;118;115"
+                "matchId": "118;118;23"
             },
             "Product": [
                 {
@@ -332,7 +168,7 @@
                     "admin": "275___",
                     "routeIdxFrom": 15,
                     "routeIdxTo": 27,
-                    "matchId": "118;118;115"
+                    "matchId": "118;118;23"
                 }
             ],
             "Notes": {
@@ -354,15 +190,735 @@
             "stopExtId": "740000764",
             "lon": 17.898781,
             "lat": 59.383271,
-            "time": "01:37:00",
-            "date": "2024-11-23",
+            "time": "13:00:00",
+            "date": "2024-11-24",
             "reachable": true,
             "direction": "Vällingby T-bana (Stockholm kn)",
             "directionFlag": "1"
         },
         {
             "JourneyDetailRef": {
-                "ref": "1|100875|0|1|23112024"
+                "ref": "1|57213|0|1|24112024"
+            },
+            "JourneyStatus": "P",
+            "ProductAtStop": {
+                "icon": {
+                    "res": "prod_gen"
+                },
+                "operatorInfo": {
+                    "name": "SL",
+                    "nameS": "275",
+                    "nameN": "275",
+                    "nameL": "SL",
+                    "id": "275"
+                },
+                "name": "Länstrafik - Buss 179",
+                "internalName": "Länstrafik - Buss 179",
+                "displayNumber": "179",
+                "num": "179",
+                "line": "179",
+                "lineId": "1275017900001",
+                "catOut": "BLT",
+                "catIn": "BLT",
+                "catCode": "7",
+                "cls": "128",
+                "catOutS": "BLT",
+                "catOutL": "Länstrafik - Buss",
+                "operatorCode": "275",
+                "operator": "SL",
+                "admin": "275___",
+                "matchId": "179;179;53"
+            },
+            "Product": [
+                {
+                    "icon": {
+                        "res": "prod_gen"
+                    },
+                    "operatorInfo": {
+                        "name": "SL",
+                        "nameS": "275",
+                        "nameN": "275",
+                        "nameL": "SL",
+                        "id": "275"
+                    },
+                    "name": "Länstrafik - Buss 179",
+                    "internalName": "Länstrafik - Buss 179",
+                    "displayNumber": "179",
+                    "num": "179",
+                    "line": "179",
+                    "lineId": "1275017900001",
+                    "catOut": "BLT",
+                    "catIn": "BLT",
+                    "catCode": "7",
+                    "cls": "128",
+                    "catOutS": "BLT",
+                    "catOutL": "Länstrafik - Buss",
+                    "operatorCode": "275",
+                    "operator": "SL",
+                    "admin": "275___",
+                    "routeIdxFrom": 7,
+                    "routeIdxTo": 17,
+                    "matchId": "179;179;53"
+                }
+            ],
+            "Notes": {
+                "Note": [
+                    {
+                        "value": "Lag 2015:953 tillämpas",
+                        "key": "EG",
+                        "type": "A",
+                        "routeIdxFrom": 7,
+                        "routeIdxTo": 17,
+                        "txtN": "Lag 2015:953 tillämpas"
+                    }
+                ]
+            },
+            "name": "Länstrafik - Buss 179",
+            "type": "ST",
+            "stop": "Spånga station (Stockholm kn)",
+            "stopid": "A=1@O=Spånga station (Stockholm kn)@X=17898781@Y=59383271@U=1@L=740000764@",
+            "stopExtId": "740000764",
+            "lon": 17.898781,
+            "lat": 59.383271,
+            "time": "13:00:00",
+            "date": "2024-11-24",
+            "reachable": true,
+            "direction": "Sollentuna station",
+            "directionFlag": "1"
+        },
+        {
+            "JourneyDetailRef": {
+                "ref": "1|15407|0|1|24112024"
+            },
+            "JourneyStatus": "P",
+            "ProductAtStop": {
+                "icon": {
+                    "res": "prod_gen"
+                },
+                "operatorInfo": {
+                    "name": "SL",
+                    "nameS": "275",
+                    "nameN": "275",
+                    "nameL": "SL",
+                    "id": "275"
+                },
+                "name": "Länstrafik - Buss 514",
+                "internalName": "Länstrafik - Buss 514",
+                "displayNumber": "514",
+                "num": "514",
+                "line": "514",
+                "lineId": "1275051400001",
+                "catOut": "BLT",
+                "catIn": "BLT",
+                "catCode": "7",
+                "cls": "128",
+                "catOutS": "BLT",
+                "catOutL": "Länstrafik - Buss",
+                "operatorCode": "275",
+                "operator": "SL",
+                "admin": "275___",
+                "matchId": "514;514;35"
+            },
+            "Product": [
+                {
+                    "icon": {
+                        "res": "prod_gen"
+                    },
+                    "operatorInfo": {
+                        "name": "SL",
+                        "nameS": "275",
+                        "nameN": "275",
+                        "nameL": "SL",
+                        "id": "275"
+                    },
+                    "name": "Länstrafik - Buss 514",
+                    "internalName": "Länstrafik - Buss 514",
+                    "displayNumber": "514",
+                    "num": "514",
+                    "line": "514",
+                    "lineId": "1275051400001",
+                    "catOut": "BLT",
+                    "catIn": "BLT",
+                    "catCode": "7",
+                    "cls": "128",
+                    "catOutS": "BLT",
+                    "catOutL": "Länstrafik - Buss",
+                    "operatorCode": "275",
+                    "operator": "SL",
+                    "admin": "275___",
+                    "routeIdxFrom": 0,
+                    "routeIdxTo": 23,
+                    "matchId": "514;514;35"
+                }
+            ],
+            "Notes": {
+                "Note": [
+                    {
+                        "value": "Lag 2015:953 tillämpas",
+                        "key": "EG",
+                        "type": "A",
+                        "routeIdxFrom": 0,
+                        "routeIdxTo": 23,
+                        "txtN": "Lag 2015:953 tillämpas"
+                    }
+                ]
+            },
+            "name": "Länstrafik - Buss 514",
+            "type": "ST",
+            "stop": "Spånga station (Stockholm kn)",
+            "stopid": "A=1@O=Spånga station (Stockholm kn)@X=17898781@Y=59383271@U=1@L=740000764@",
+            "stopExtId": "740000764",
+            "lon": 17.898781,
+            "lat": 59.383271,
+            "time": "13:01:00",
+            "date": "2024-11-24",
+            "reachable": true,
+            "direction": "Sollentuna station",
+            "directionFlag": "1"
+        },
+        {
+            "JourneyDetailRef": {
+                "ref": "1|55183|0|1|24112024"
+            },
+            "JourneyStatus": "P",
+            "ProductAtStop": {
+                "icon": {
+                    "res": "prod_gen"
+                },
+                "operatorInfo": {
+                    "name": "SL",
+                    "nameS": "275",
+                    "nameN": "275",
+                    "nameL": "SL",
+                    "id": "275"
+                },
+                "name": "Länstrafik - Buss 112",
+                "internalName": "Länstrafik - Buss 112",
+                "displayNumber": "112",
+                "num": "112",
+                "line": "112",
+                "lineId": "1275011200001",
+                "catOut": "BLT",
+                "catIn": "BLT",
+                "catCode": "7",
+                "cls": "128",
+                "catOutS": "BLT",
+                "catOutL": "Länstrafik - Buss",
+                "operatorCode": "275",
+                "operator": "SL",
+                "admin": "275___",
+                "matchId": "112;112;32"
+            },
+            "Product": [
+                {
+                    "icon": {
+                        "res": "prod_gen"
+                    },
+                    "operatorInfo": {
+                        "name": "SL",
+                        "nameS": "275",
+                        "nameN": "275",
+                        "nameL": "SL",
+                        "id": "275"
+                    },
+                    "name": "Länstrafik - Buss 112",
+                    "internalName": "Länstrafik - Buss 112",
+                    "displayNumber": "112",
+                    "num": "112",
+                    "line": "112",
+                    "lineId": "1275011200001",
+                    "catOut": "BLT",
+                    "catIn": "BLT",
+                    "catCode": "7",
+                    "cls": "128",
+                    "catOutS": "BLT",
+                    "catOutL": "Länstrafik - Buss",
+                    "operatorCode": "275",
+                    "operator": "SL",
+                    "admin": "275___",
+                    "routeIdxFrom": 0,
+                    "routeIdxTo": 19,
+                    "matchId": "112;112;32"
+                }
+            ],
+            "Notes": {
+                "Note": [
+                    {
+                        "value": "Lag 2015:953 tillämpas",
+                        "key": "EG",
+                        "type": "A",
+                        "routeIdxFrom": 0,
+                        "routeIdxTo": 19,
+                        "txtN": "Lag 2015:953 tillämpas"
+                    }
+                ]
+            },
+            "name": "Länstrafik - Buss 112",
+            "type": "ST",
+            "stop": "Spånga station (Stockholm kn)",
+            "stopid": "A=1@O=Spånga station (Stockholm kn)@X=17898781@Y=59383271@U=1@L=740000764@",
+            "stopExtId": "740000764",
+            "lon": 17.898781,
+            "lat": 59.383271,
+            "time": "13:01:00",
+            "date": "2024-11-24",
+            "reachable": true,
+            "direction": "Alvik T-bana (Stockholm kn)",
+            "directionFlag": "1"
+        },
+        {
+            "JourneyDetailRef": {
+                "ref": "1|57363|1|1|24112024"
+            },
+            "JourneyStatus": "P",
+            "ProductAtStop": {
+                "icon": {
+                    "res": "prod_gen"
+                },
+                "operatorInfo": {
+                    "name": "SL",
+                    "nameS": "275",
+                    "nameN": "275",
+                    "nameL": "SL",
+                    "id": "275"
+                },
+                "name": "Länstrafik - Buss 179",
+                "internalName": "Länstrafik - Buss 179",
+                "displayNumber": "179",
+                "num": "179",
+                "line": "179",
+                "lineId": "1275017900001",
+                "catOut": "BLT",
+                "catIn": "BLT",
+                "catCode": "7",
+                "cls": "128",
+                "catOutS": "BLT",
+                "catOutL": "Länstrafik - Buss",
+                "operatorCode": "275",
+                "operator": "SL",
+                "admin": "275___",
+                "matchId": "179;179;49"
+            },
+            "Product": [
+                {
+                    "icon": {
+                        "res": "prod_gen"
+                    },
+                    "operatorInfo": {
+                        "name": "SL",
+                        "nameS": "275",
+                        "nameN": "275",
+                        "nameL": "SL",
+                        "id": "275"
+                    },
+                    "name": "Länstrafik - Buss 179",
+                    "internalName": "Länstrafik - Buss 179",
+                    "displayNumber": "179",
+                    "num": "179",
+                    "line": "179",
+                    "lineId": "1275017900001",
+                    "catOut": "BLT",
+                    "catIn": "BLT",
+                    "catCode": "7",
+                    "cls": "128",
+                    "catOutS": "BLT",
+                    "catOutL": "Länstrafik - Buss",
+                    "operatorCode": "275",
+                    "operator": "SL",
+                    "admin": "275___",
+                    "routeIdxFrom": 10,
+                    "routeIdxTo": 17,
+                    "matchId": "179;179;49"
+                }
+            ],
+            "Notes": {
+                "Note": [
+                    {
+                        "value": "Lag 2015:953 tillämpas",
+                        "key": "EG",
+                        "type": "A",
+                        "routeIdxFrom": 10,
+                        "routeIdxTo": 17,
+                        "txtN": "Lag 2015:953 tillämpas"
+                    }
+                ]
+            },
+            "name": "Länstrafik - Buss 179",
+            "type": "ST",
+            "stop": "Spånga station (Stockholm kn)",
+            "stopid": "A=1@O=Spånga station (Stockholm kn)@X=17898781@Y=59383271@U=1@L=740000764@",
+            "stopExtId": "740000764",
+            "lon": 17.898781,
+            "lat": 59.383271,
+            "time": "13:01:00",
+            "date": "2024-11-24",
+            "reachable": true,
+            "direction": "Vällingby T-bana (Stockholm kn)",
+            "directionFlag": "2"
+        },
+        {
+            "JourneyDetailRef": {
+                "ref": "1|117953|2|1|24112024"
+            },
+            "JourneyStatus": "P",
+            "ProductAtStop": {
+                "icon": {
+                    "res": "prod_gen"
+                },
+                "operatorInfo": {
+                    "name": "SL",
+                    "nameS": "275",
+                    "nameN": "275",
+                    "nameL": "SL",
+                    "id": "275"
+                },
+                "name": "Länstrafik - Buss 116",
+                "internalName": "Länstrafik - Buss 116",
+                "displayNumber": "116",
+                "num": "116",
+                "line": "116",
+                "lineId": "1275011600001",
+                "catOut": "BLT",
+                "catIn": "BLT",
+                "catCode": "7",
+                "cls": "128",
+                "catOutS": "BLT",
+                "catOutL": "Länstrafik - Buss",
+                "operatorCode": "275",
+                "operator": "SL",
+                "admin": "275___",
+                "matchId": "116;116;30"
+            },
+            "Product": [
+                {
+                    "icon": {
+                        "res": "prod_gen"
+                    },
+                    "operatorInfo": {
+                        "name": "SL",
+                        "nameS": "275",
+                        "nameN": "275",
+                        "nameL": "SL",
+                        "id": "275"
+                    },
+                    "name": "Länstrafik - Buss 116",
+                    "internalName": "Länstrafik - Buss 116",
+                    "displayNumber": "116",
+                    "num": "116",
+                    "line": "116",
+                    "lineId": "1275011600001",
+                    "catOut": "BLT",
+                    "catIn": "BLT",
+                    "catCode": "7",
+                    "cls": "128",
+                    "catOutS": "BLT",
+                    "catOutL": "Länstrafik - Buss",
+                    "operatorCode": "275",
+                    "operator": "SL",
+                    "admin": "275___",
+                    "routeIdxFrom": 0,
+                    "routeIdxTo": 19,
+                    "matchId": "116;116;30"
+                }
+            ],
+            "Notes": {
+                "Note": [
+                    {
+                        "value": "Lag 2015:953 tillämpas",
+                        "key": "EG",
+                        "type": "A",
+                        "routeIdxFrom": 0,
+                        "routeIdxTo": 19,
+                        "txtN": "Lag 2015:953 tillämpas"
+                    }
+                ]
+            },
+            "name": "Länstrafik - Buss 116",
+            "type": "ST",
+            "stop": "Spånga station (Stockholm kn)",
+            "stopid": "A=1@O=Spånga station (Stockholm kn)@X=17898781@Y=59383271@U=1@L=740000764@",
+            "stopExtId": "740000764",
+            "lon": 17.898781,
+            "lat": 59.383271,
+            "time": "13:01:00",
+            "date": "2024-11-24",
+            "reachable": true,
+            "direction": "Vällingby T-bana (Stockholm kn)",
+            "directionFlag": "1"
+        },
+        {
+            "JourneyDetailRef": {
+                "ref": "1|165002|1|1|24112024"
+            },
+            "JourneyStatus": "P",
+            "ProductAtStop": {
+                "icon": {
+                    "res": "prod_gen"
+                },
+                "operatorInfo": {
+                    "name": "SL",
+                    "nameS": "275",
+                    "nameN": "275",
+                    "nameL": "SL",
+                    "id": "275"
+                },
+                "name": "Länstrafik - Buss 517",
+                "internalName": "Länstrafik - Buss 517",
+                "displayNumber": "517",
+                "num": "517",
+                "line": "517",
+                "lineId": "1275051700001",
+                "catOut": "BLT",
+                "catIn": "BLT",
+                "catCode": "7",
+                "cls": "128",
+                "catOutS": "BLT",
+                "catOutL": "Länstrafik - Buss",
+                "operatorCode": "275",
+                "operator": "SL",
+                "admin": "275___",
+                "matchId": "517;517;22"
+            },
+            "Product": [
+                {
+                    "icon": {
+                        "res": "prod_gen"
+                    },
+                    "operatorInfo": {
+                        "name": "SL",
+                        "nameS": "275",
+                        "nameN": "275",
+                        "nameL": "SL",
+                        "id": "275"
+                    },
+                    "name": "Länstrafik - Buss 517",
+                    "internalName": "Länstrafik - Buss 517",
+                    "displayNumber": "517",
+                    "num": "517",
+                    "line": "517",
+                    "lineId": "1275051700001",
+                    "catOut": "BLT",
+                    "catIn": "BLT",
+                    "catCode": "7",
+                    "cls": "128",
+                    "catOutS": "BLT",
+                    "catOutL": "Länstrafik - Buss",
+                    "operatorCode": "275",
+                    "operator": "SL",
+                    "admin": "275___",
+                    "routeIdxFrom": 0,
+                    "routeIdxTo": 23,
+                    "matchId": "517;517;22"
+                }
+            ],
+            "Notes": {
+                "Note": [
+                    {
+                        "value": "Lag 2015:953 tillämpas",
+                        "key": "EG",
+                        "type": "A",
+                        "routeIdxFrom": 0,
+                        "routeIdxTo": 23,
+                        "txtN": "Lag 2015:953 tillämpas"
+                    }
+                ]
+            },
+            "name": "Länstrafik - Buss 517",
+            "type": "ST",
+            "stop": "Spånga station (Stockholm kn)",
+            "stopid": "A=1@O=Spånga station (Stockholm kn)@X=17898781@Y=59383271@U=1@L=740000764@",
+            "stopExtId": "740000764",
+            "lon": 17.898781,
+            "lat": 59.383271,
+            "time": "13:01:00",
+            "date": "2024-11-24",
+            "reachable": true,
+            "direction": "Kista T-bana (Stockholm kn)",
+            "directionFlag": "1"
+        },
+        {
+            "JourneyDetailRef": {
+                "ref": "1|170770|1|1|24112024"
+            },
+            "JourneyStatus": "P",
+            "ProductAtStop": {
+                "icon": {
+                    "res": "prod_gen"
+                },
+                "operatorInfo": {
+                    "name": "SL",
+                    "nameS": "275",
+                    "nameN": "275",
+                    "nameL": "SL",
+                    "id": "275"
+                },
+                "name": "Länstrafik - Buss 117",
+                "internalName": "Länstrafik - Buss 117",
+                "displayNumber": "117",
+                "num": "117",
+                "line": "117",
+                "lineId": "1275011700001",
+                "catOut": "BLT",
+                "catIn": "BLT",
+                "catCode": "7",
+                "cls": "128",
+                "catOutS": "BLT",
+                "catOutL": "Länstrafik - Buss",
+                "operatorCode": "275",
+                "operator": "SL",
+                "admin": "275___",
+                "matchId": "117;117;44"
+            },
+            "Product": [
+                {
+                    "icon": {
+                        "res": "prod_gen"
+                    },
+                    "operatorInfo": {
+                        "name": "SL",
+                        "nameS": "275",
+                        "nameN": "275",
+                        "nameL": "SL",
+                        "id": "275"
+                    },
+                    "name": "Länstrafik - Buss 117",
+                    "internalName": "Länstrafik - Buss 117",
+                    "displayNumber": "117",
+                    "num": "117",
+                    "line": "117",
+                    "lineId": "1275011700001",
+                    "catOut": "BLT",
+                    "catIn": "BLT",
+                    "catCode": "7",
+                    "cls": "128",
+                    "catOutS": "BLT",
+                    "catOutL": "Länstrafik - Buss",
+                    "operatorCode": "275",
+                    "operator": "SL",
+                    "admin": "275___",
+                    "routeIdxFrom": 0,
+                    "routeIdxTo": 19,
+                    "matchId": "117;117;44"
+                }
+            ],
+            "Notes": {
+                "Note": [
+                    {
+                        "value": "Lag 2015:953 tillämpas",
+                        "key": "EG",
+                        "type": "A",
+                        "routeIdxFrom": 0,
+                        "routeIdxTo": 19,
+                        "txtN": "Lag 2015:953 tillämpas"
+                    }
+                ]
+            },
+            "name": "Länstrafik - Buss 117",
+            "type": "ST",
+            "stop": "Spånga station (Stockholm kn)",
+            "stopid": "A=1@O=Spånga station (Stockholm kn)@X=17898781@Y=59383271@U=1@L=740000764@",
+            "stopExtId": "740000764",
+            "lon": 17.898781,
+            "lat": 59.383271,
+            "time": "13:01:00",
+            "date": "2024-11-24",
+            "reachable": true,
+            "direction": "Brommaplan T-bana (Stockholm kn)",
+            "directionFlag": "1"
+        },
+        {
+            "JourneyDetailRef": {
+                "ref": "1|98186|0|1|24112024"
+            },
+            "JourneyStatus": "P",
+            "ProductAtStop": {
+                "icon": {
+                    "res": "prod_gen"
+                },
+                "operatorInfo": {
+                    "name": "SL",
+                    "nameS": "275",
+                    "nameN": "275",
+                    "nameL": "SL",
+                    "id": "275"
+                },
+                "name": "Länstrafik - Buss 512",
+                "internalName": "Länstrafik - Buss 512",
+                "displayNumber": "512",
+                "num": "512",
+                "line": "512",
+                "lineId": "1275051200001",
+                "catOut": "BLT",
+                "catIn": "BLT",
+                "catCode": "7",
+                "cls": "128",
+                "catOutS": "BLT",
+                "catOutL": "Länstrafik - Buss",
+                "operatorCode": "275",
+                "operator": "SL",
+                "admin": "275___",
+                "matchId": "512;512;29"
+            },
+            "Product": [
+                {
+                    "icon": {
+                        "res": "prod_gen"
+                    },
+                    "operatorInfo": {
+                        "name": "SL",
+                        "nameS": "275",
+                        "nameN": "275",
+                        "nameL": "SL",
+                        "id": "275"
+                    },
+                    "name": "Länstrafik - Buss 512",
+                    "internalName": "Länstrafik - Buss 512",
+                    "displayNumber": "512",
+                    "num": "512",
+                    "line": "512",
+                    "lineId": "1275051200001",
+                    "catOut": "BLT",
+                    "catIn": "BLT",
+                    "catCode": "7",
+                    "cls": "128",
+                    "catOutS": "BLT",
+                    "catOutL": "Länstrafik - Buss",
+                    "operatorCode": "275",
+                    "operator": "SL",
+                    "admin": "275___",
+                    "routeIdxFrom": 0,
+                    "routeIdxTo": 23,
+                    "matchId": "512;512;29"
+                }
+            ],
+            "Notes": {
+                "Note": [
+                    {
+                        "value": "Lag 2015:953 tillämpas",
+                        "key": "EG",
+                        "type": "A",
+                        "routeIdxFrom": 0,
+                        "routeIdxTo": 23,
+                        "txtN": "Lag 2015:953 tillämpas"
+                    }
+                ]
+            },
+            "name": "Länstrafik - Buss 512",
+            "type": "ST",
+            "stop": "Spånga station (Stockholm kn)",
+            "stopid": "A=1@O=Spånga station (Stockholm kn)@X=17898781@Y=59383271@U=1@L=740000764@",
+            "stopExtId": "740000764",
+            "lon": 17.898781,
+            "lat": 59.383271,
+            "time": "13:02:00",
+            "date": "2024-11-24",
+            "reachable": true,
+            "direction": "Solna centrum T-bana",
+            "directionFlag": "1"
+        },
+        {
+            "JourneyDetailRef": {
+                "ref": "1|100837|4|1|24112024"
             },
             "JourneyStatus": "P",
             "ProductAtStop": {
@@ -391,7 +947,203 @@
                 "operatorCode": "275",
                 "operator": "SL",
                 "admin": "275___",
-                "matchId": "T24C001 BÅL-NYH LT;T24C001 BÅL-NYH LT;2584"
+                "matchId": "T24C001 BÅL-NYH LT;T24C001 BÅL-NYH LT;2837"
+            },
+            "Product": [
+                {
+                    "icon": {
+                        "res": "prod_gen"
+                    },
+                    "operatorInfo": {
+                        "name": "SL",
+                        "nameS": "275",
+                        "nameN": "275",
+                        "nameL": "SL",
+                        "id": "275"
+                    },
+                    "name": "Länstrafik - Tåg 43",
+                    "internalName": "Länstrafik - Tåg 43",
+                    "displayNumber": "43",
+                    "num": "43",
+                    "line": "43",
+                    "lineId": "1275000000001",
+                    "catOut": "JLT",
+                    "catIn": "JLT",
+                    "catCode": "4",
+                    "cls": "16",
+                    "catOutS": "JLT",
+                    "catOutL": "Länstrafik - Tåg",
+                    "operatorCode": "275",
+                    "operator": "SL",
+                    "admin": "275___",
+                    "routeIdxFrom": 4,
+                    "routeIdxTo": 17,
+                    "matchId": "T24C001 BÅL-NYH LT;T24C001 BÅL-NYH LT;2837"
+                }
+            ],
+            "Notes": {
+                "Note": [
+                    {
+                        "value": "Endast 2 klass",
+                        "key": "AA",
+                        "type": "A",
+                        "routeIdxFrom": 4,
+                        "routeIdxTo": 17,
+                        "txtN": "Endast 2 klass"
+                    },
+                    {
+                        "value": "Lag 2015:953 tillämpas",
+                        "key": "EG",
+                        "type": "A",
+                        "routeIdxFrom": 4,
+                        "routeIdxTo": 17,
+                        "txtN": "Lag 2015:953 tillämpas"
+                    },
+                    {
+                        "value": "Pendeltåg",
+                        "key": "VH",
+                        "type": "A",
+                        "routeIdxFrom": 4,
+                        "routeIdxTo": 17,
+                        "txtN": "Pendeltåg"
+                    }
+                ]
+            },
+            "name": "Länstrafik - Tåg 43",
+            "type": "ST",
+            "stop": "Spånga station (Stockholm kn)",
+            "stopid": "A=1@O=Spånga station (Stockholm kn)@X=17898781@Y=59383271@U=1@L=740000764@",
+            "stopExtId": "740000764",
+            "lon": 17.898781,
+            "lat": 59.383271,
+            "time": "13:05:00",
+            "date": "2024-11-24",
+            "reachable": true,
+            "direction": "Västerhaninge station (Haninge kn)",
+            "directionFlag": "1"
+        },
+        {
+            "JourneyDetailRef": {
+                "ref": "1|57215|0|1|24112024"
+            },
+            "JourneyStatus": "P",
+            "ProductAtStop": {
+                "icon": {
+                    "res": "prod_gen"
+                },
+                "operatorInfo": {
+                    "name": "SL",
+                    "nameS": "275",
+                    "nameN": "275",
+                    "nameL": "SL",
+                    "id": "275"
+                },
+                "name": "Länstrafik - Buss 179",
+                "internalName": "Länstrafik - Buss 179",
+                "displayNumber": "179",
+                "num": "179",
+                "line": "179",
+                "lineId": "1275017900001",
+                "catOut": "BLT",
+                "catIn": "BLT",
+                "catCode": "7",
+                "cls": "128",
+                "catOutS": "BLT",
+                "catOutL": "Länstrafik - Buss",
+                "operatorCode": "275",
+                "operator": "SL",
+                "admin": "275___",
+                "matchId": "179;179;55"
+            },
+            "Product": [
+                {
+                    "icon": {
+                        "res": "prod_gen"
+                    },
+                    "operatorInfo": {
+                        "name": "SL",
+                        "nameS": "275",
+                        "nameN": "275",
+                        "nameL": "SL",
+                        "id": "275"
+                    },
+                    "name": "Länstrafik - Buss 179",
+                    "internalName": "Länstrafik - Buss 179",
+                    "displayNumber": "179",
+                    "num": "179",
+                    "line": "179",
+                    "lineId": "1275017900001",
+                    "catOut": "BLT",
+                    "catIn": "BLT",
+                    "catCode": "7",
+                    "cls": "128",
+                    "catOutS": "BLT",
+                    "catOutL": "Länstrafik - Buss",
+                    "operatorCode": "275",
+                    "operator": "SL",
+                    "admin": "275___",
+                    "routeIdxFrom": 7,
+                    "routeIdxTo": 17,
+                    "matchId": "179;179;55"
+                }
+            ],
+            "Notes": {
+                "Note": [
+                    {
+                        "value": "Lag 2015:953 tillämpas",
+                        "key": "EG",
+                        "type": "A",
+                        "routeIdxFrom": 7,
+                        "routeIdxTo": 17,
+                        "txtN": "Lag 2015:953 tillämpas"
+                    }
+                ]
+            },
+            "name": "Länstrafik - Buss 179",
+            "type": "ST",
+            "stop": "Spånga station (Stockholm kn)",
+            "stopid": "A=1@O=Spånga station (Stockholm kn)@X=17898781@Y=59383271@U=1@L=740000764@",
+            "stopExtId": "740000764",
+            "lon": 17.898781,
+            "lat": 59.383271,
+            "time": "13:10:00",
+            "date": "2024-11-24",
+            "reachable": true,
+            "direction": "Sollentuna station",
+            "directionFlag": "1"
+        },
+        {
+            "JourneyDetailRef": {
+                "ref": "1|100872|0|1|24112024"
+            },
+            "JourneyStatus": "P",
+            "ProductAtStop": {
+                "icon": {
+                    "res": "prod_gen"
+                },
+                "operatorInfo": {
+                    "name": "SL",
+                    "nameS": "275",
+                    "nameN": "275",
+                    "nameL": "SL",
+                    "id": "275"
+                },
+                "name": "Länstrafik - Tåg 43",
+                "internalName": "Länstrafik - Tåg 43",
+                "displayNumber": "43",
+                "num": "43",
+                "line": "43",
+                "lineId": "1275000000001",
+                "catOut": "JLT",
+                "catIn": "JLT",
+                "catCode": "4",
+                "cls": "16",
+                "catOutS": "JLT",
+                "catOutL": "Länstrafik - Tåg",
+                "operatorCode": "275",
+                "operator": "SL",
+                "admin": "275___",
+                "matchId": "T24C001 BÅL-NYH LT;T24C001 BÅL-NYH LT;2534"
             },
             "Product": [
                 {
@@ -422,7 +1174,7 @@
                     "admin": "275___",
                     "routeIdxFrom": 13,
                     "routeIdxTo": 19,
-                    "matchId": "T24C001 BÅL-NYH LT;T24C001 BÅL-NYH LT;2584"
+                    "matchId": "T24C001 BÅL-NYH LT;T24C001 BÅL-NYH LT;2534"
                 }
             ],
             "Notes": {
@@ -460,15 +1212,15 @@
             "stopExtId": "740000764",
             "lon": 17.898781,
             "lat": 59.383271,
-            "time": "01:40:00",
-            "date": "2024-11-23",
+            "time": "13:10:00",
+            "date": "2024-11-24",
             "reachable": true,
             "direction": "Bålsta station (Håbo kn)",
             "directionFlag": "2"
         },
         {
             "JourneyDetailRef": {
-                "ref": "1|94585|1|1|23112024"
+                "ref": "1|57363|2|1|24112024"
             },
             "JourneyStatus": "P",
             "ProductAtStop": {
@@ -482,12 +1234,12 @@
                     "nameL": "SL",
                     "id": "275"
                 },
-                "name": "Länstrafik - Buss 591",
-                "internalName": "Länstrafik - Buss 591",
-                "displayNumber": "591",
-                "num": "591",
-                "line": "591",
-                "lineId": "1275059100001",
+                "name": "Länstrafik - Buss 179",
+                "internalName": "Länstrafik - Buss 179",
+                "displayNumber": "179",
+                "num": "179",
+                "line": "179",
+                "lineId": "1275017900001",
                 "catOut": "BLT",
                 "catIn": "BLT",
                 "catCode": "7",
@@ -497,7 +1249,7 @@
                 "operatorCode": "275",
                 "operator": "SL",
                 "admin": "275___",
-                "matchId": "591;591;12"
+                "matchId": "179;179;52"
             },
             "Product": [
                 {
@@ -511,12 +1263,12 @@
                         "nameL": "SL",
                         "id": "275"
                     },
-                    "name": "Länstrafik - Buss 591",
-                    "internalName": "Länstrafik - Buss 591",
-                    "displayNumber": "591",
-                    "num": "591",
-                    "line": "591",
-                    "lineId": "1275059100001",
+                    "name": "Länstrafik - Buss 179",
+                    "internalName": "Länstrafik - Buss 179",
+                    "displayNumber": "179",
+                    "num": "179",
+                    "line": "179",
+                    "lineId": "1275017900001",
                     "catOut": "BLT",
                     "catIn": "BLT",
                     "catCode": "7",
@@ -526,9 +1278,9 @@
                     "operatorCode": "275",
                     "operator": "SL",
                     "admin": "275___",
-                    "routeIdxFrom": 7,
-                    "routeIdxTo": 26,
-                    "matchId": "591;591;12"
+                    "routeIdxFrom": 10,
+                    "routeIdxTo": 17,
+                    "matchId": "179;179;52"
                 }
             ],
             "Notes": {
@@ -537,298 +1289,28 @@
                         "value": "Lag 2015:953 tillämpas",
                         "key": "EG",
                         "type": "A",
-                        "routeIdxFrom": 7,
-                        "routeIdxTo": 26,
+                        "routeIdxFrom": 10,
+                        "routeIdxTo": 17,
                         "txtN": "Lag 2015:953 tillämpas"
                     }
                 ]
             },
-            "name": "Länstrafik - Buss 591",
+            "name": "Länstrafik - Buss 179",
             "type": "ST",
             "stop": "Spånga station (Stockholm kn)",
             "stopid": "A=1@O=Spånga station (Stockholm kn)@X=17898781@Y=59383271@U=1@L=740000764@",
             "stopExtId": "740000764",
             "lon": 17.898781,
             "lat": 59.383271,
-            "time": "01:41:00",
-            "date": "2024-11-23",
+            "time": "13:11:00",
+            "date": "2024-11-24",
             "reachable": true,
-            "direction": "Stockholm Citytermin Kungsbron",
+            "direction": "Vällingby T-bana (Stockholm kn)",
             "directionFlag": "2"
         },
         {
             "JourneyDetailRef": {
-                "ref": "1|15467|2|1|23112024"
-            },
-            "JourneyStatus": "P",
-            "ProductAtStop": {
-                "icon": {
-                    "res": "prod_gen"
-                },
-                "operatorInfo": {
-                    "name": "SL",
-                    "nameS": "275",
-                    "nameN": "275",
-                    "nameL": "SL",
-                    "id": "275"
-                },
-                "name": "Länstrafik - Buss 514",
-                "internalName": "Länstrafik - Buss 514",
-                "displayNumber": "514",
-                "num": "514",
-                "line": "514",
-                "lineId": "1275051400001",
-                "catOut": "BLT",
-                "catIn": "BLT",
-                "catCode": "7",
-                "cls": "128",
-                "catOutS": "BLT",
-                "catOutL": "Länstrafik - Buss",
-                "operatorCode": "275",
-                "operator": "SL",
-                "admin": "275___",
-                "matchId": "514;514;138"
-            },
-            "Product": [
-                {
-                    "icon": {
-                        "res": "prod_gen"
-                    },
-                    "operatorInfo": {
-                        "name": "SL",
-                        "nameS": "275",
-                        "nameN": "275",
-                        "nameL": "SL",
-                        "id": "275"
-                    },
-                    "name": "Länstrafik - Buss 514",
-                    "internalName": "Länstrafik - Buss 514",
-                    "displayNumber": "514",
-                    "num": "514",
-                    "line": "514",
-                    "lineId": "1275051400001",
-                    "catOut": "BLT",
-                    "catIn": "BLT",
-                    "catCode": "7",
-                    "cls": "128",
-                    "catOutS": "BLT",
-                    "catOutL": "Länstrafik - Buss",
-                    "operatorCode": "275",
-                    "operator": "SL",
-                    "admin": "275___",
-                    "routeIdxFrom": 0,
-                    "routeIdxTo": 22,
-                    "matchId": "514;514;138"
-                }
-            ],
-            "Notes": {
-                "Note": [
-                    {
-                        "value": "Lag 2015:953 tillämpas",
-                        "key": "EG",
-                        "type": "A",
-                        "routeIdxFrom": 0,
-                        "routeIdxTo": 22,
-                        "txtN": "Lag 2015:953 tillämpas"
-                    }
-                ]
-            },
-            "name": "Länstrafik - Buss 514",
-            "type": "ST",
-            "stop": "Spånga station (Stockholm kn)",
-            "stopid": "A=1@O=Spånga station (Stockholm kn)@X=17898781@Y=59383271@U=1@L=740000764@",
-            "stopExtId": "740000764",
-            "lon": 17.898781,
-            "lat": 59.383271,
-            "time": "01:46:00",
-            "date": "2024-11-23",
-            "reachable": true,
-            "direction": "Sollentuna station",
-            "directionFlag": "1"
-        },
-        {
-            "JourneyDetailRef": {
-                "ref": "1|170824|1|1|23112024"
-            },
-            "JourneyStatus": "P",
-            "ProductAtStop": {
-                "icon": {
-                    "res": "prod_gen"
-                },
-                "operatorInfo": {
-                    "name": "SL",
-                    "nameS": "275",
-                    "nameN": "275",
-                    "nameL": "SL",
-                    "id": "275"
-                },
-                "name": "Länstrafik - Buss 117",
-                "internalName": "Länstrafik - Buss 117",
-                "displayNumber": "117",
-                "num": "117",
-                "line": "117",
-                "lineId": "1275011700001",
-                "catOut": "BLT",
-                "catIn": "BLT",
-                "catCode": "7",
-                "cls": "128",
-                "catOutS": "BLT",
-                "catOutL": "Länstrafik - Buss",
-                "operatorCode": "275",
-                "operator": "SL",
-                "admin": "275___",
-                "matchId": "117;117;215"
-            },
-            "Product": [
-                {
-                    "icon": {
-                        "res": "prod_gen"
-                    },
-                    "operatorInfo": {
-                        "name": "SL",
-                        "nameS": "275",
-                        "nameN": "275",
-                        "nameL": "SL",
-                        "id": "275"
-                    },
-                    "name": "Länstrafik - Buss 117",
-                    "internalName": "Länstrafik - Buss 117",
-                    "displayNumber": "117",
-                    "num": "117",
-                    "line": "117",
-                    "lineId": "1275011700001",
-                    "catOut": "BLT",
-                    "catIn": "BLT",
-                    "catCode": "7",
-                    "cls": "128",
-                    "catOutS": "BLT",
-                    "catOutL": "Länstrafik - Buss",
-                    "operatorCode": "275",
-                    "operator": "SL",
-                    "admin": "275___",
-                    "routeIdxFrom": 0,
-                    "routeIdxTo": 18,
-                    "matchId": "117;117;215"
-                }
-            ],
-            "Notes": {
-                "Note": [
-                    {
-                        "value": "Lag 2015:953 tillämpas",
-                        "key": "EG",
-                        "type": "A",
-                        "routeIdxFrom": 0,
-                        "routeIdxTo": 18,
-                        "txtN": "Lag 2015:953 tillämpas"
-                    }
-                ]
-            },
-            "name": "Länstrafik - Buss 117",
-            "type": "ST",
-            "stop": "Spånga station (Stockholm kn)",
-            "stopid": "A=1@O=Spånga station (Stockholm kn)@X=17898781@Y=59383271@U=1@L=740000764@",
-            "stopExtId": "740000764",
-            "lon": 17.898781,
-            "lat": 59.383271,
-            "time": "01:46:00",
-            "date": "2024-11-23",
-            "reachable": true,
-            "direction": "Brommaplan T-bana (Stockholm kn)",
-            "directionFlag": "1"
-        },
-        {
-            "JourneyDetailRef": {
-                "ref": "1|68766|2|1|23112024"
-            },
-            "JourneyStatus": "P",
-            "ProductAtStop": {
-                "icon": {
-                    "res": "prod_gen"
-                },
-                "operatorInfo": {
-                    "name": "SL",
-                    "nameS": "275",
-                    "nameN": "275",
-                    "nameL": "SL",
-                    "id": "275"
-                },
-                "name": "Länstrafik - Buss 119",
-                "internalName": "Länstrafik - Buss 119",
-                "displayNumber": "119",
-                "num": "119",
-                "line": "119",
-                "lineId": "1275011900001",
-                "catOut": "BLT",
-                "catIn": "BLT",
-                "catCode": "7",
-                "cls": "128",
-                "catOutS": "BLT",
-                "catOutL": "Länstrafik - Buss",
-                "operatorCode": "275",
-                "operator": "SL",
-                "admin": "275___",
-                "matchId": "119;119;109"
-            },
-            "Product": [
-                {
-                    "icon": {
-                        "res": "prod_gen"
-                    },
-                    "operatorInfo": {
-                        "name": "SL",
-                        "nameS": "275",
-                        "nameN": "275",
-                        "nameL": "SL",
-                        "id": "275"
-                    },
-                    "name": "Länstrafik - Buss 119",
-                    "internalName": "Länstrafik - Buss 119",
-                    "displayNumber": "119",
-                    "num": "119",
-                    "line": "119",
-                    "lineId": "1275011900001",
-                    "catOut": "BLT",
-                    "catIn": "BLT",
-                    "catCode": "7",
-                    "cls": "128",
-                    "catOutS": "BLT",
-                    "catOutL": "Länstrafik - Buss",
-                    "operatorCode": "275",
-                    "operator": "SL",
-                    "admin": "275___",
-                    "routeIdxFrom": 0,
-                    "routeIdxTo": 36,
-                    "matchId": "119;119;109"
-                }
-            ],
-            "Notes": {
-                "Note": [
-                    {
-                        "value": "Lag 2015:953 tillämpas",
-                        "key": "EG",
-                        "type": "A",
-                        "routeIdxFrom": 0,
-                        "routeIdxTo": 36,
-                        "txtN": "Lag 2015:953 tillämpas"
-                    }
-                ]
-            },
-            "name": "Länstrafik - Buss 119",
-            "type": "ST",
-            "stop": "Spånga station (Stockholm kn)",
-            "stopid": "A=1@O=Spånga station (Stockholm kn)@X=17898781@Y=59383271@U=1@L=740000764@",
-            "stopExtId": "740000764",
-            "lon": 17.898781,
-            "lat": 59.383271,
-            "time": "01:48:00",
-            "date": "2024-11-23",
-            "reachable": true,
-            "direction": "Backlura (Stockholm kn)",
-            "directionFlag": "2"
-        },
-        {
-            "JourneyDetailRef": {
-                "ref": "1|41452|1|1|23112024"
+                "ref": "1|41489|1|1|24112024"
             },
             "JourneyStatus": "P",
             "ProductAtStop": {
@@ -857,7 +1339,7 @@
                 "operatorCode": "275",
                 "operator": "SL",
                 "admin": "275___",
-                "matchId": "118;118;116"
+                "matchId": "118;118;24"
             },
             "Product": [
                 {
@@ -888,7 +1370,7 @@
                     "admin": "275___",
                     "routeIdxFrom": 12,
                     "routeIdxTo": 27,
-                    "matchId": "118;118;116"
+                    "matchId": "118;118;24"
                 }
             ],
             "Notes": {
@@ -910,15 +1392,15 @@
             "stopExtId": "740000764",
             "lon": 17.898781,
             "lat": 59.383271,
-            "time": "02:00:00",
-            "date": "2024-11-23",
+            "time": "13:15:00",
+            "date": "2024-11-24",
             "reachable": true,
             "direction": "Hallonbergen T-bana (Sundbyberg kn)",
             "directionFlag": "2"
         },
         {
             "JourneyDetailRef": {
-                "ref": "1|55234|2|1|23112024"
+                "ref": "1|15410|0|1|24112024"
             },
             "JourneyStatus": "P",
             "ProductAtStop": {
@@ -932,12 +1414,12 @@
                     "nameL": "SL",
                     "id": "275"
                 },
-                "name": "Länstrafik - Buss 112",
-                "internalName": "Länstrafik - Buss 112",
-                "displayNumber": "112",
-                "num": "112",
-                "line": "112",
-                "lineId": "1275011200001",
+                "name": "Länstrafik - Buss 514",
+                "internalName": "Länstrafik - Buss 514",
+                "displayNumber": "514",
+                "num": "514",
+                "line": "514",
+                "lineId": "1275051400001",
                 "catOut": "BLT",
                 "catIn": "BLT",
                 "catCode": "7",
@@ -947,7 +1429,7 @@
                 "operatorCode": "275",
                 "operator": "SL",
                 "admin": "275___",
-                "matchId": "112;112;113"
+                "matchId": "514;514;37"
             },
             "Product": [
                 {
@@ -961,12 +1443,12 @@
                         "nameL": "SL",
                         "id": "275"
                     },
-                    "name": "Länstrafik - Buss 112",
-                    "internalName": "Länstrafik - Buss 112",
-                    "displayNumber": "112",
-                    "num": "112",
-                    "line": "112",
-                    "lineId": "1275011200001",
+                    "name": "Länstrafik - Buss 514",
+                    "internalName": "Länstrafik - Buss 514",
+                    "displayNumber": "514",
+                    "num": "514",
+                    "line": "514",
+                    "lineId": "1275051400001",
                     "catOut": "BLT",
                     "catIn": "BLT",
                     "catCode": "7",
@@ -977,8 +1459,8 @@
                     "operator": "SL",
                     "admin": "275___",
                     "routeIdxFrom": 0,
-                    "routeIdxTo": 19,
-                    "matchId": "112;112;113"
+                    "routeIdxTo": 23,
+                    "matchId": "514;514;37"
                 }
             ],
             "Notes": {
@@ -988,27 +1470,27 @@
                         "key": "EG",
                         "type": "A",
                         "routeIdxFrom": 0,
-                        "routeIdxTo": 19,
+                        "routeIdxTo": 23,
                         "txtN": "Lag 2015:953 tillämpas"
                     }
                 ]
             },
-            "name": "Länstrafik - Buss 112",
+            "name": "Länstrafik - Buss 514",
             "type": "ST",
             "stop": "Spånga station (Stockholm kn)",
             "stopid": "A=1@O=Spånga station (Stockholm kn)@X=17898781@Y=59383271@U=1@L=740000764@",
             "stopExtId": "740000764",
             "lon": 17.898781,
             "lat": 59.383271,
-            "time": "02:01:00",
-            "date": "2024-11-23",
+            "time": "13:16:00",
+            "date": "2024-11-24",
             "reachable": true,
-            "direction": "Alvik T-bana (Stockholm kn)",
+            "direction": "Sollentuna station",
             "directionFlag": "1"
         },
         {
             "JourneyDetailRef": {
-                "ref": "1|117881|2|1|23112024"
+                "ref": "1|68799|1|1|24112024"
             },
             "JourneyStatus": "P",
             "ProductAtStop": {
@@ -1022,12 +1504,12 @@
                     "nameL": "SL",
                     "id": "275"
                 },
-                "name": "Länstrafik - Buss 116",
-                "internalName": "Länstrafik - Buss 116",
-                "displayNumber": "116",
-                "num": "116",
-                "line": "116",
-                "lineId": "1275011600001",
+                "name": "Länstrafik - Buss 119",
+                "internalName": "Länstrafik - Buss 119",
+                "displayNumber": "119",
+                "num": "119",
+                "line": "119",
+                "lineId": "1275011900001",
                 "catOut": "BLT",
                 "catIn": "BLT",
                 "catCode": "7",
@@ -1037,7 +1519,7 @@
                 "operatorCode": "275",
                 "operator": "SL",
                 "admin": "275___",
-                "matchId": "116;116;171"
+                "matchId": "119;119;30"
             },
             "Product": [
                 {
@@ -1051,12 +1533,102 @@
                         "nameL": "SL",
                         "id": "275"
                     },
-                    "name": "Länstrafik - Buss 116",
-                    "internalName": "Länstrafik - Buss 116",
-                    "displayNumber": "116",
-                    "num": "116",
-                    "line": "116",
-                    "lineId": "1275011600001",
+                    "name": "Länstrafik - Buss 119",
+                    "internalName": "Länstrafik - Buss 119",
+                    "displayNumber": "119",
+                    "num": "119",
+                    "line": "119",
+                    "lineId": "1275011900001",
+                    "catOut": "BLT",
+                    "catIn": "BLT",
+                    "catCode": "7",
+                    "cls": "128",
+                    "catOutS": "BLT",
+                    "catOutL": "Länstrafik - Buss",
+                    "operatorCode": "275",
+                    "operator": "SL",
+                    "admin": "275___",
+                    "routeIdxFrom": 0,
+                    "routeIdxTo": 36,
+                    "matchId": "119;119;30"
+                }
+            ],
+            "Notes": {
+                "Note": [
+                    {
+                        "value": "Lag 2015:953 tillämpas",
+                        "key": "EG",
+                        "type": "A",
+                        "routeIdxFrom": 0,
+                        "routeIdxTo": 36,
+                        "txtN": "Lag 2015:953 tillämpas"
+                    }
+                ]
+            },
+            "name": "Länstrafik - Buss 119",
+            "type": "ST",
+            "stop": "Spånga station (Stockholm kn)",
+            "stopid": "A=1@O=Spånga station (Stockholm kn)@X=17898781@Y=59383271@U=1@L=740000764@",
+            "stopExtId": "740000764",
+            "lon": 17.898781,
+            "lat": 59.383271,
+            "time": "13:16:00",
+            "date": "2024-11-24",
+            "reachable": true,
+            "direction": "Backlura (Stockholm kn)",
+            "directionFlag": "2"
+        },
+        {
+            "JourneyDetailRef": {
+                "ref": "1|170770|2|1|24112024"
+            },
+            "JourneyStatus": "P",
+            "ProductAtStop": {
+                "icon": {
+                    "res": "prod_gen"
+                },
+                "operatorInfo": {
+                    "name": "SL",
+                    "nameS": "275",
+                    "nameN": "275",
+                    "nameL": "SL",
+                    "id": "275"
+                },
+                "name": "Länstrafik - Buss 117",
+                "internalName": "Länstrafik - Buss 117",
+                "displayNumber": "117",
+                "num": "117",
+                "line": "117",
+                "lineId": "1275011700001",
+                "catOut": "BLT",
+                "catIn": "BLT",
+                "catCode": "7",
+                "cls": "128",
+                "catOutS": "BLT",
+                "catOutL": "Länstrafik - Buss",
+                "operatorCode": "275",
+                "operator": "SL",
+                "admin": "275___",
+                "matchId": "117;117;46"
+            },
+            "Product": [
+                {
+                    "icon": {
+                        "res": "prod_gen"
+                    },
+                    "operatorInfo": {
+                        "name": "SL",
+                        "nameS": "275",
+                        "nameN": "275",
+                        "nameL": "SL",
+                        "id": "275"
+                    },
+                    "name": "Länstrafik - Buss 117",
+                    "internalName": "Länstrafik - Buss 117",
+                    "displayNumber": "117",
+                    "num": "117",
+                    "line": "117",
+                    "lineId": "1275011700001",
                     "catOut": "BLT",
                     "catIn": "BLT",
                     "catCode": "7",
@@ -1068,7 +1640,7 @@
                     "admin": "275___",
                     "routeIdxFrom": 0,
                     "routeIdxTo": 19,
-                    "matchId": "116;116;171"
+                    "matchId": "117;117;46"
                 }
             ],
             "Notes": {
@@ -1083,22 +1655,414 @@
                     }
                 ]
             },
-            "name": "Länstrafik - Buss 116",
+            "name": "Länstrafik - Buss 117",
             "type": "ST",
             "stop": "Spånga station (Stockholm kn)",
             "stopid": "A=1@O=Spånga station (Stockholm kn)@X=17898781@Y=59383271@U=1@L=740000764@",
             "stopExtId": "740000764",
             "lon": 17.898781,
             "lat": 59.383271,
-            "time": "02:01:00",
-            "date": "2024-11-23",
+            "time": "13:16:00",
+            "date": "2024-11-24",
+            "reachable": true,
+            "direction": "Brommaplan T-bana (Stockholm kn)",
+            "directionFlag": "1"
+        },
+        {
+            "JourneyDetailRef": {
+                "ref": "1|57196|1|1|24112024"
+            },
+            "JourneyStatus": "P",
+            "ProductAtStop": {
+                "icon": {
+                    "res": "prod_gen"
+                },
+                "operatorInfo": {
+                    "name": "SL",
+                    "nameS": "275",
+                    "nameN": "275",
+                    "nameL": "SL",
+                    "id": "275"
+                },
+                "name": "Länstrafik - Buss 179",
+                "internalName": "Länstrafik - Buss 179",
+                "displayNumber": "179",
+                "num": "179",
+                "line": "179",
+                "lineId": "1275017900001",
+                "catOut": "BLT",
+                "catIn": "BLT",
+                "catCode": "7",
+                "cls": "128",
+                "catOutS": "BLT",
+                "catOutL": "Länstrafik - Buss",
+                "operatorCode": "275",
+                "operator": "SL",
+                "admin": "275___",
+                "matchId": "179;179;57"
+            },
+            "Product": [
+                {
+                    "icon": {
+                        "res": "prod_gen"
+                    },
+                    "operatorInfo": {
+                        "name": "SL",
+                        "nameS": "275",
+                        "nameN": "275",
+                        "nameL": "SL",
+                        "id": "275"
+                    },
+                    "name": "Länstrafik - Buss 179",
+                    "internalName": "Länstrafik - Buss 179",
+                    "displayNumber": "179",
+                    "num": "179",
+                    "line": "179",
+                    "lineId": "1275017900001",
+                    "catOut": "BLT",
+                    "catIn": "BLT",
+                    "catCode": "7",
+                    "cls": "128",
+                    "catOutS": "BLT",
+                    "catOutL": "Länstrafik - Buss",
+                    "operatorCode": "275",
+                    "operator": "SL",
+                    "admin": "275___",
+                    "routeIdxFrom": 7,
+                    "routeIdxTo": 17,
+                    "matchId": "179;179;57"
+                }
+            ],
+            "Notes": {
+                "Note": [
+                    {
+                        "value": "Lag 2015:953 tillämpas",
+                        "key": "EG",
+                        "type": "A",
+                        "routeIdxFrom": 7,
+                        "routeIdxTo": 17,
+                        "txtN": "Lag 2015:953 tillämpas"
+                    }
+                ]
+            },
+            "name": "Länstrafik - Buss 179",
+            "type": "ST",
+            "stop": "Spånga station (Stockholm kn)",
+            "stopid": "A=1@O=Spånga station (Stockholm kn)@X=17898781@Y=59383271@U=1@L=740000764@",
+            "stopExtId": "740000764",
+            "lon": 17.898781,
+            "lat": 59.383271,
+            "time": "13:20:00",
+            "date": "2024-11-24",
+            "reachable": true,
+            "direction": "Sollentuna station",
+            "directionFlag": "1"
+        },
+        {
+            "JourneyDetailRef": {
+                "ref": "1|100851|1|1|24112024"
+            },
+            "JourneyStatus": "P",
+            "ProductAtStop": {
+                "icon": {
+                    "res": "prod_gen"
+                },
+                "operatorInfo": {
+                    "name": "SL",
+                    "nameS": "275",
+                    "nameN": "275",
+                    "nameL": "SL",
+                    "id": "275"
+                },
+                "name": "Länstrafik - Tåg 43",
+                "internalName": "Länstrafik - Tåg 43",
+                "displayNumber": "43",
+                "num": "43",
+                "line": "43",
+                "lineId": "1275000000001",
+                "catOut": "JLT",
+                "catIn": "JLT",
+                "catCode": "4",
+                "cls": "16",
+                "catOutS": "JLT",
+                "catOutL": "Länstrafik - Tåg",
+                "operatorCode": "275",
+                "operator": "SL",
+                "admin": "275___",
+                "matchId": "T24C001 BÅL-NYH LT;T24C001 BÅL-NYH LT;2539"
+            },
+            "Product": [
+                {
+                    "icon": {
+                        "res": "prod_gen"
+                    },
+                    "operatorInfo": {
+                        "name": "SL",
+                        "nameS": "275",
+                        "nameN": "275",
+                        "nameL": "SL",
+                        "id": "275"
+                    },
+                    "name": "Länstrafik - Tåg 43",
+                    "internalName": "Länstrafik - Tåg 43",
+                    "displayNumber": "43",
+                    "num": "43",
+                    "line": "43",
+                    "lineId": "1275000000001",
+                    "catOut": "JLT",
+                    "catIn": "JLT",
+                    "catCode": "4",
+                    "cls": "16",
+                    "catOutS": "JLT",
+                    "catOutL": "Länstrafik - Tåg",
+                    "operatorCode": "275",
+                    "operator": "SL",
+                    "admin": "275___",
+                    "routeIdxFrom": 6,
+                    "routeIdxTo": 27,
+                    "matchId": "T24C001 BÅL-NYH LT;T24C001 BÅL-NYH LT;2539"
+                }
+            ],
+            "Notes": {
+                "Note": [
+                    {
+                        "value": "Endast 2 klass",
+                        "key": "AA",
+                        "type": "A",
+                        "routeIdxFrom": 6,
+                        "routeIdxTo": 27,
+                        "txtN": "Endast 2 klass"
+                    },
+                    {
+                        "value": "Lag 2015:953 tillämpas",
+                        "key": "EG",
+                        "type": "A",
+                        "routeIdxFrom": 6,
+                        "routeIdxTo": 27,
+                        "txtN": "Lag 2015:953 tillämpas"
+                    },
+                    {
+                        "value": "Pendeltåg",
+                        "key": "VH",
+                        "type": "A",
+                        "routeIdxFrom": 6,
+                        "routeIdxTo": 27,
+                        "txtN": "Pendeltåg"
+                    }
+                ]
+            },
+            "name": "Länstrafik - Tåg 43",
+            "type": "ST",
+            "stop": "Spånga station (Stockholm kn)",
+            "stopid": "A=1@O=Spånga station (Stockholm kn)@X=17898781@Y=59383271@U=1@L=740000764@",
+            "stopExtId": "740000764",
+            "lon": 17.898781,
+            "lat": 59.383271,
+            "time": "13:20:00",
+            "date": "2024-11-24",
+            "reachable": true,
+            "direction": "Nynäshamn station",
+            "directionFlag": "1"
+        },
+        {
+            "JourneyDetailRef": {
+                "ref": "1|57369|0|1|24112024"
+            },
+            "JourneyStatus": "P",
+            "ProductAtStop": {
+                "icon": {
+                    "res": "prod_gen"
+                },
+                "operatorInfo": {
+                    "name": "SL",
+                    "nameS": "275",
+                    "nameN": "275",
+                    "nameL": "SL",
+                    "id": "275"
+                },
+                "name": "Länstrafik - Buss 179",
+                "internalName": "Länstrafik - Buss 179",
+                "displayNumber": "179",
+                "num": "179",
+                "line": "179",
+                "lineId": "1275017900001",
+                "catOut": "BLT",
+                "catIn": "BLT",
+                "catCode": "7",
+                "cls": "128",
+                "catOutS": "BLT",
+                "catOutL": "Länstrafik - Buss",
+                "operatorCode": "275",
+                "operator": "SL",
+                "admin": "275___",
+                "matchId": "179;179;54"
+            },
+            "Product": [
+                {
+                    "icon": {
+                        "res": "prod_gen"
+                    },
+                    "operatorInfo": {
+                        "name": "SL",
+                        "nameS": "275",
+                        "nameN": "275",
+                        "nameL": "SL",
+                        "id": "275"
+                    },
+                    "name": "Länstrafik - Buss 179",
+                    "internalName": "Länstrafik - Buss 179",
+                    "displayNumber": "179",
+                    "num": "179",
+                    "line": "179",
+                    "lineId": "1275017900001",
+                    "catOut": "BLT",
+                    "catIn": "BLT",
+                    "catCode": "7",
+                    "cls": "128",
+                    "catOutS": "BLT",
+                    "catOutL": "Länstrafik - Buss",
+                    "operatorCode": "275",
+                    "operator": "SL",
+                    "admin": "275___",
+                    "routeIdxFrom": 10,
+                    "routeIdxTo": 17,
+                    "matchId": "179;179;54"
+                }
+            ],
+            "Notes": {
+                "Note": [
+                    {
+                        "value": "Lag 2015:953 tillämpas",
+                        "key": "EG",
+                        "type": "A",
+                        "routeIdxFrom": 10,
+                        "routeIdxTo": 17,
+                        "txtN": "Lag 2015:953 tillämpas"
+                    }
+                ]
+            },
+            "name": "Länstrafik - Buss 179",
+            "type": "ST",
+            "stop": "Spånga station (Stockholm kn)",
+            "stopid": "A=1@O=Spånga station (Stockholm kn)@X=17898781@Y=59383271@U=1@L=740000764@",
+            "stopExtId": "740000764",
+            "lon": 17.898781,
+            "lat": 59.383271,
+            "time": "13:21:00",
+            "date": "2024-11-24",
             "reachable": true,
             "direction": "Vällingby T-bana (Stockholm kn)",
-            "directionFlag": "1"
+            "directionFlag": "2"
         },
         {
             "JourneyDetailRef": {
-                "ref": "1|41439|0|1|23112024"
+                "ref": "1|100892|3|1|24112024"
+            },
+            "JourneyStatus": "P",
+            "ProductAtStop": {
+                "icon": {
+                    "res": "prod_gen"
+                },
+                "operatorInfo": {
+                    "name": "SL",
+                    "nameS": "275",
+                    "nameN": "275",
+                    "nameL": "SL",
+                    "id": "275"
+                },
+                "name": "Länstrafik - Tåg 43",
+                "internalName": "Länstrafik - Tåg 43",
+                "displayNumber": "43",
+                "num": "43",
+                "line": "43",
+                "lineId": "1275000000001",
+                "catOut": "JLT",
+                "catIn": "JLT",
+                "catCode": "4",
+                "cls": "16",
+                "catOutS": "JLT",
+                "catOutL": "Länstrafik - Tåg",
+                "operatorCode": "275",
+                "operator": "SL",
+                "admin": "275___",
+                "matchId": "T24C001 BÅL-NYH LT;T24C001 BÅL-NYH LT;2836"
+            },
+            "Product": [
+                {
+                    "icon": {
+                        "res": "prod_gen"
+                    },
+                    "operatorInfo": {
+                        "name": "SL",
+                        "nameS": "275",
+                        "nameN": "275",
+                        "nameL": "SL",
+                        "id": "275"
+                    },
+                    "name": "Länstrafik - Tåg 43",
+                    "internalName": "Länstrafik - Tåg 43",
+                    "displayNumber": "43",
+                    "num": "43",
+                    "line": "43",
+                    "lineId": "1275000000001",
+                    "catOut": "JLT",
+                    "catIn": "JLT",
+                    "catCode": "4",
+                    "cls": "16",
+                    "catOutS": "JLT",
+                    "catOutL": "Länstrafik - Tåg",
+                    "operatorCode": "275",
+                    "operator": "SL",
+                    "admin": "275___",
+                    "routeIdxFrom": 21,
+                    "routeIdxTo": 25,
+                    "matchId": "T24C001 BÅL-NYH LT;T24C001 BÅL-NYH LT;2836"
+                }
+            ],
+            "Notes": {
+                "Note": [
+                    {
+                        "value": "Endast 2 klass",
+                        "key": "AA",
+                        "type": "A",
+                        "routeIdxFrom": 21,
+                        "routeIdxTo": 25,
+                        "txtN": "Endast 2 klass"
+                    },
+                    {
+                        "value": "Lag 2015:953 tillämpas",
+                        "key": "EG",
+                        "type": "A",
+                        "routeIdxFrom": 21,
+                        "routeIdxTo": 25,
+                        "txtN": "Lag 2015:953 tillämpas"
+                    },
+                    {
+                        "value": "Pendeltåg",
+                        "key": "VH",
+                        "type": "A",
+                        "routeIdxFrom": 21,
+                        "routeIdxTo": 25,
+                        "txtN": "Pendeltåg"
+                    }
+                ]
+            },
+            "name": "Länstrafik - Tåg 43",
+            "type": "ST",
+            "stop": "Spånga station (Stockholm kn)",
+            "stopid": "A=1@O=Spånga station (Stockholm kn)@X=17898781@Y=59383271@U=1@L=740000764@",
+            "stopExtId": "740000764",
+            "lon": 17.898781,
+            "lat": 59.383271,
+            "time": "13:25:00",
+            "date": "2024-11-24",
+            "reachable": true,
+            "direction": "Kungsängen station (Upplands Bro kn)",
+            "directionFlag": "2"
+        },
+        {
+            "JourneyDetailRef": {
+                "ref": "1|41345|0|1|24112024"
             },
             "JourneyStatus": "P",
             "ProductAtStop": {
@@ -1127,7 +2091,7 @@
                 "operatorCode": "275",
                 "operator": "SL",
                 "admin": "275___",
-                "matchId": "118;118;117"
+                "matchId": "118;118;25"
             },
             "Product": [
                 {
@@ -1158,7 +2122,7 @@
                     "admin": "275___",
                     "routeIdxFrom": 15,
                     "routeIdxTo": 27,
-                    "matchId": "118;118;117"
+                    "matchId": "118;118;25"
                 }
             ],
             "Notes": {
@@ -1180,15 +2144,15 @@
             "stopExtId": "740000764",
             "lon": 17.898781,
             "lat": 59.383271,
-            "time": "02:07:00",
-            "date": "2024-11-23",
+            "time": "13:30:00",
+            "date": "2024-11-24",
             "reachable": true,
             "direction": "Vällingby T-bana (Stockholm kn)",
             "directionFlag": "1"
         },
         {
             "JourneyDetailRef": {
-                "ref": "1|146568|0|1|23112024"
+                "ref": "1|57217|0|1|24112024"
             },
             "JourneyStatus": "P",
             "ProductAtStop": {
@@ -1202,12 +2166,12 @@
                     "nameL": "SL",
                     "id": "275"
                 },
-                "name": "Länstrafik - Buss 199",
-                "internalName": "Länstrafik - Buss 199",
-                "displayNumber": "199",
-                "num": "199",
-                "line": "199",
-                "lineId": "1275019900001",
+                "name": "Länstrafik - Buss 179",
+                "internalName": "Länstrafik - Buss 179",
+                "displayNumber": "179",
+                "num": "179",
+                "line": "179",
+                "lineId": "1275017900001",
                 "catOut": "BLT",
                 "catIn": "BLT",
                 "catCode": "7",
@@ -1217,7 +2181,7 @@
                 "operatorCode": "275",
                 "operator": "SL",
                 "admin": "275___",
-                "matchId": "199;199;1"
+                "matchId": "179;179;59"
             },
             "Product": [
                 {
@@ -1231,12 +2195,12 @@
                         "nameL": "SL",
                         "id": "275"
                     },
-                    "name": "Länstrafik - Buss 199",
-                    "internalName": "Länstrafik - Buss 199",
-                    "displayNumber": "199",
-                    "num": "199",
-                    "line": "199",
-                    "lineId": "1275019900001",
+                    "name": "Länstrafik - Buss 179",
+                    "internalName": "Länstrafik - Buss 179",
+                    "displayNumber": "179",
+                    "num": "179",
+                    "line": "179",
+                    "lineId": "1275017900001",
                     "catOut": "BLT",
                     "catIn": "BLT",
                     "catCode": "7",
@@ -1246,9 +2210,9 @@
                     "operatorCode": "275",
                     "operator": "SL",
                     "admin": "275___",
-                    "routeIdxFrom": 20,
-                    "routeIdxTo": 35,
-                    "matchId": "199;199;1"
+                    "routeIdxFrom": 7,
+                    "routeIdxTo": 17,
+                    "matchId": "179;179;59"
                 }
             ],
             "Notes": {
@@ -1257,118 +2221,28 @@
                         "value": "Lag 2015:953 tillämpas",
                         "key": "EG",
                         "type": "A",
-                        "routeIdxFrom": 20,
-                        "routeIdxTo": 35,
+                        "routeIdxFrom": 7,
+                        "routeIdxTo": 17,
                         "txtN": "Lag 2015:953 tillämpas"
                     }
                 ]
             },
-            "name": "Länstrafik - Buss 199",
+            "name": "Länstrafik - Buss 179",
             "type": "ST",
             "stop": "Spånga station (Stockholm kn)",
             "stopid": "A=1@O=Spånga station (Stockholm kn)@X=17898781@Y=59383271@U=1@L=740000764@",
             "stopExtId": "740000764",
             "lon": 17.898781,
             "lat": 59.383271,
-            "time": "02:10:00",
-            "date": "2024-11-23",
+            "time": "13:30:00",
+            "date": "2024-11-24",
             "reachable": true,
-            "direction": "Hallonbergen T-bana (Sundbyberg kn)",
+            "direction": "Sollentuna station",
             "directionFlag": "1"
         },
         {
             "JourneyDetailRef": {
-                "ref": "1|94586|0|1|23112024"
-            },
-            "JourneyStatus": "P",
-            "ProductAtStop": {
-                "icon": {
-                    "res": "prod_gen"
-                },
-                "operatorInfo": {
-                    "name": "SL",
-                    "nameS": "275",
-                    "nameN": "275",
-                    "nameL": "SL",
-                    "id": "275"
-                },
-                "name": "Länstrafik - Buss 591",
-                "internalName": "Länstrafik - Buss 591",
-                "displayNumber": "591",
-                "num": "591",
-                "line": "591",
-                "lineId": "1275059100001",
-                "catOut": "BLT",
-                "catIn": "BLT",
-                "catCode": "7",
-                "cls": "128",
-                "catOutS": "BLT",
-                "catOutL": "Länstrafik - Buss",
-                "operatorCode": "275",
-                "operator": "SL",
-                "admin": "275___",
-                "matchId": "591;591;14"
-            },
-            "Product": [
-                {
-                    "icon": {
-                        "res": "prod_gen"
-                    },
-                    "operatorInfo": {
-                        "name": "SL",
-                        "nameS": "275",
-                        "nameN": "275",
-                        "nameL": "SL",
-                        "id": "275"
-                    },
-                    "name": "Länstrafik - Buss 591",
-                    "internalName": "Länstrafik - Buss 591",
-                    "displayNumber": "591",
-                    "num": "591",
-                    "line": "591",
-                    "lineId": "1275059100001",
-                    "catOut": "BLT",
-                    "catIn": "BLT",
-                    "catCode": "7",
-                    "cls": "128",
-                    "catOutS": "BLT",
-                    "catOutL": "Länstrafik - Buss",
-                    "operatorCode": "275",
-                    "operator": "SL",
-                    "admin": "275___",
-                    "routeIdxFrom": 25,
-                    "routeIdxTo": 44,
-                    "matchId": "591;591;14"
-                }
-            ],
-            "Notes": {
-                "Note": [
-                    {
-                        "value": "Lag 2015:953 tillämpas",
-                        "key": "EG",
-                        "type": "A",
-                        "routeIdxFrom": 25,
-                        "routeIdxTo": 44,
-                        "txtN": "Lag 2015:953 tillämpas"
-                    }
-                ]
-            },
-            "name": "Länstrafik - Buss 591",
-            "type": "ST",
-            "stop": "Spånga station (Stockholm kn)",
-            "stopid": "A=1@O=Spånga station (Stockholm kn)@X=17898781@Y=59383271@U=1@L=740000764@",
-            "stopExtId": "740000764",
-            "lon": 17.898781,
-            "lat": 59.383271,
-            "time": "02:11:00",
-            "date": "2024-11-23",
-            "reachable": true,
-            "direction": "Stockholm Citytermin Kungsbron",
-            "directionFlag": "2"
-        },
-        {
-            "JourneyDetailRef": {
-                "ref": "1|15467|3|1|23112024"
+                "ref": "1|15410|1|1|24112024"
             },
             "JourneyStatus": "P",
             "ProductAtStop": {
@@ -1397,7 +2271,7 @@
                 "operatorCode": "275",
                 "operator": "SL",
                 "admin": "275___",
-                "matchId": "514;514;140"
+                "matchId": "514;514;39"
             },
             "Product": [
                 {
@@ -1427,8 +2301,8 @@
                     "operator": "SL",
                     "admin": "275___",
                     "routeIdxFrom": 0,
-                    "routeIdxTo": 22,
-                    "matchId": "514;514;140"
+                    "routeIdxTo": 23,
+                    "matchId": "514;514;39"
                 }
             ],
             "Notes": {
@@ -1438,7 +2312,7 @@
                         "key": "EG",
                         "type": "A",
                         "routeIdxFrom": 0,
-                        "routeIdxTo": 22,
+                        "routeIdxTo": 23,
                         "txtN": "Lag 2015:953 tillämpas"
                     }
                 ]
@@ -1450,15 +2324,375 @@
             "stopExtId": "740000764",
             "lon": 17.898781,
             "lat": 59.383271,
-            "time": "02:16:00",
-            "date": "2024-11-23",
+            "time": "13:31:00",
+            "date": "2024-11-24",
             "reachable": true,
             "direction": "Sollentuna station",
             "directionFlag": "1"
         },
         {
             "JourneyDetailRef": {
-                "ref": "1|170828|0|1|23112024"
+                "ref": "1|55183|1|1|24112024"
+            },
+            "JourneyStatus": "P",
+            "ProductAtStop": {
+                "icon": {
+                    "res": "prod_gen"
+                },
+                "operatorInfo": {
+                    "name": "SL",
+                    "nameS": "275",
+                    "nameN": "275",
+                    "nameL": "SL",
+                    "id": "275"
+                },
+                "name": "Länstrafik - Buss 112",
+                "internalName": "Länstrafik - Buss 112",
+                "displayNumber": "112",
+                "num": "112",
+                "line": "112",
+                "lineId": "1275011200001",
+                "catOut": "BLT",
+                "catIn": "BLT",
+                "catCode": "7",
+                "cls": "128",
+                "catOutS": "BLT",
+                "catOutL": "Länstrafik - Buss",
+                "operatorCode": "275",
+                "operator": "SL",
+                "admin": "275___",
+                "matchId": "112;112;34"
+            },
+            "Product": [
+                {
+                    "icon": {
+                        "res": "prod_gen"
+                    },
+                    "operatorInfo": {
+                        "name": "SL",
+                        "nameS": "275",
+                        "nameN": "275",
+                        "nameL": "SL",
+                        "id": "275"
+                    },
+                    "name": "Länstrafik - Buss 112",
+                    "internalName": "Länstrafik - Buss 112",
+                    "displayNumber": "112",
+                    "num": "112",
+                    "line": "112",
+                    "lineId": "1275011200001",
+                    "catOut": "BLT",
+                    "catIn": "BLT",
+                    "catCode": "7",
+                    "cls": "128",
+                    "catOutS": "BLT",
+                    "catOutL": "Länstrafik - Buss",
+                    "operatorCode": "275",
+                    "operator": "SL",
+                    "admin": "275___",
+                    "routeIdxFrom": 0,
+                    "routeIdxTo": 19,
+                    "matchId": "112;112;34"
+                }
+            ],
+            "Notes": {
+                "Note": [
+                    {
+                        "value": "Lag 2015:953 tillämpas",
+                        "key": "EG",
+                        "type": "A",
+                        "routeIdxFrom": 0,
+                        "routeIdxTo": 19,
+                        "txtN": "Lag 2015:953 tillämpas"
+                    }
+                ]
+            },
+            "name": "Länstrafik - Buss 112",
+            "type": "ST",
+            "stop": "Spånga station (Stockholm kn)",
+            "stopid": "A=1@O=Spånga station (Stockholm kn)@X=17898781@Y=59383271@U=1@L=740000764@",
+            "stopExtId": "740000764",
+            "lon": 17.898781,
+            "lat": 59.383271,
+            "time": "13:31:00",
+            "date": "2024-11-24",
+            "reachable": true,
+            "direction": "Alvik T-bana (Stockholm kn)",
+            "directionFlag": "1"
+        },
+        {
+            "JourneyDetailRef": {
+                "ref": "1|57373|0|1|24112024"
+            },
+            "JourneyStatus": "P",
+            "ProductAtStop": {
+                "icon": {
+                    "res": "prod_gen"
+                },
+                "operatorInfo": {
+                    "name": "SL",
+                    "nameS": "275",
+                    "nameN": "275",
+                    "nameL": "SL",
+                    "id": "275"
+                },
+                "name": "Länstrafik - Buss 179",
+                "internalName": "Länstrafik - Buss 179",
+                "displayNumber": "179",
+                "num": "179",
+                "line": "179",
+                "lineId": "1275017900001",
+                "catOut": "BLT",
+                "catIn": "BLT",
+                "catCode": "7",
+                "cls": "128",
+                "catOutS": "BLT",
+                "catOutL": "Länstrafik - Buss",
+                "operatorCode": "275",
+                "operator": "SL",
+                "admin": "275___",
+                "matchId": "179;179;56"
+            },
+            "Product": [
+                {
+                    "icon": {
+                        "res": "prod_gen"
+                    },
+                    "operatorInfo": {
+                        "name": "SL",
+                        "nameS": "275",
+                        "nameN": "275",
+                        "nameL": "SL",
+                        "id": "275"
+                    },
+                    "name": "Länstrafik - Buss 179",
+                    "internalName": "Länstrafik - Buss 179",
+                    "displayNumber": "179",
+                    "num": "179",
+                    "line": "179",
+                    "lineId": "1275017900001",
+                    "catOut": "BLT",
+                    "catIn": "BLT",
+                    "catCode": "7",
+                    "cls": "128",
+                    "catOutS": "BLT",
+                    "catOutL": "Länstrafik - Buss",
+                    "operatorCode": "275",
+                    "operator": "SL",
+                    "admin": "275___",
+                    "routeIdxFrom": 10,
+                    "routeIdxTo": 17,
+                    "matchId": "179;179;56"
+                }
+            ],
+            "Notes": {
+                "Note": [
+                    {
+                        "value": "Lag 2015:953 tillämpas",
+                        "key": "EG",
+                        "type": "A",
+                        "routeIdxFrom": 10,
+                        "routeIdxTo": 17,
+                        "txtN": "Lag 2015:953 tillämpas"
+                    }
+                ]
+            },
+            "name": "Länstrafik - Buss 179",
+            "type": "ST",
+            "stop": "Spånga station (Stockholm kn)",
+            "stopid": "A=1@O=Spånga station (Stockholm kn)@X=17898781@Y=59383271@U=1@L=740000764@",
+            "stopExtId": "740000764",
+            "lon": 17.898781,
+            "lat": 59.383271,
+            "time": "13:31:00",
+            "date": "2024-11-24",
+            "reachable": true,
+            "direction": "Vällingby T-bana (Stockholm kn)",
+            "directionFlag": "2"
+        },
+        {
+            "JourneyDetailRef": {
+                "ref": "1|117953|3|1|24112024"
+            },
+            "JourneyStatus": "P",
+            "ProductAtStop": {
+                "icon": {
+                    "res": "prod_gen"
+                },
+                "operatorInfo": {
+                    "name": "SL",
+                    "nameS": "275",
+                    "nameN": "275",
+                    "nameL": "SL",
+                    "id": "275"
+                },
+                "name": "Länstrafik - Buss 116",
+                "internalName": "Länstrafik - Buss 116",
+                "displayNumber": "116",
+                "num": "116",
+                "line": "116",
+                "lineId": "1275011600001",
+                "catOut": "BLT",
+                "catIn": "BLT",
+                "catCode": "7",
+                "cls": "128",
+                "catOutS": "BLT",
+                "catOutL": "Länstrafik - Buss",
+                "operatorCode": "275",
+                "operator": "SL",
+                "admin": "275___",
+                "matchId": "116;116;32"
+            },
+            "Product": [
+                {
+                    "icon": {
+                        "res": "prod_gen"
+                    },
+                    "operatorInfo": {
+                        "name": "SL",
+                        "nameS": "275",
+                        "nameN": "275",
+                        "nameL": "SL",
+                        "id": "275"
+                    },
+                    "name": "Länstrafik - Buss 116",
+                    "internalName": "Länstrafik - Buss 116",
+                    "displayNumber": "116",
+                    "num": "116",
+                    "line": "116",
+                    "lineId": "1275011600001",
+                    "catOut": "BLT",
+                    "catIn": "BLT",
+                    "catCode": "7",
+                    "cls": "128",
+                    "catOutS": "BLT",
+                    "catOutL": "Länstrafik - Buss",
+                    "operatorCode": "275",
+                    "operator": "SL",
+                    "admin": "275___",
+                    "routeIdxFrom": 0,
+                    "routeIdxTo": 19,
+                    "matchId": "116;116;32"
+                }
+            ],
+            "Notes": {
+                "Note": [
+                    {
+                        "value": "Lag 2015:953 tillämpas",
+                        "key": "EG",
+                        "type": "A",
+                        "routeIdxFrom": 0,
+                        "routeIdxTo": 19,
+                        "txtN": "Lag 2015:953 tillämpas"
+                    }
+                ]
+            },
+            "name": "Länstrafik - Buss 116",
+            "type": "ST",
+            "stop": "Spånga station (Stockholm kn)",
+            "stopid": "A=1@O=Spånga station (Stockholm kn)@X=17898781@Y=59383271@U=1@L=740000764@",
+            "stopExtId": "740000764",
+            "lon": 17.898781,
+            "lat": 59.383271,
+            "time": "13:31:00",
+            "date": "2024-11-24",
+            "reachable": true,
+            "direction": "Vällingby T-bana (Stockholm kn)",
+            "directionFlag": "1"
+        },
+        {
+            "JourneyDetailRef": {
+                "ref": "1|165002|2|1|24112024"
+            },
+            "JourneyStatus": "P",
+            "ProductAtStop": {
+                "icon": {
+                    "res": "prod_gen"
+                },
+                "operatorInfo": {
+                    "name": "SL",
+                    "nameS": "275",
+                    "nameN": "275",
+                    "nameL": "SL",
+                    "id": "275"
+                },
+                "name": "Länstrafik - Buss 517",
+                "internalName": "Länstrafik - Buss 517",
+                "displayNumber": "517",
+                "num": "517",
+                "line": "517",
+                "lineId": "1275051700001",
+                "catOut": "BLT",
+                "catIn": "BLT",
+                "catCode": "7",
+                "cls": "128",
+                "catOutS": "BLT",
+                "catOutL": "Länstrafik - Buss",
+                "operatorCode": "275",
+                "operator": "SL",
+                "admin": "275___",
+                "matchId": "517;517;24"
+            },
+            "Product": [
+                {
+                    "icon": {
+                        "res": "prod_gen"
+                    },
+                    "operatorInfo": {
+                        "name": "SL",
+                        "nameS": "275",
+                        "nameN": "275",
+                        "nameL": "SL",
+                        "id": "275"
+                    },
+                    "name": "Länstrafik - Buss 517",
+                    "internalName": "Länstrafik - Buss 517",
+                    "displayNumber": "517",
+                    "num": "517",
+                    "line": "517",
+                    "lineId": "1275051700001",
+                    "catOut": "BLT",
+                    "catIn": "BLT",
+                    "catCode": "7",
+                    "cls": "128",
+                    "catOutS": "BLT",
+                    "catOutL": "Länstrafik - Buss",
+                    "operatorCode": "275",
+                    "operator": "SL",
+                    "admin": "275___",
+                    "routeIdxFrom": 0,
+                    "routeIdxTo": 23,
+                    "matchId": "517;517;24"
+                }
+            ],
+            "Notes": {
+                "Note": [
+                    {
+                        "value": "Lag 2015:953 tillämpas",
+                        "key": "EG",
+                        "type": "A",
+                        "routeIdxFrom": 0,
+                        "routeIdxTo": 23,
+                        "txtN": "Lag 2015:953 tillämpas"
+                    }
+                ]
+            },
+            "name": "Länstrafik - Buss 517",
+            "type": "ST",
+            "stop": "Spånga station (Stockholm kn)",
+            "stopid": "A=1@O=Spånga station (Stockholm kn)@X=17898781@Y=59383271@U=1@L=740000764@",
+            "stopExtId": "740000764",
+            "lon": 17.898781,
+            "lat": 59.383271,
+            "time": "13:31:00",
+            "date": "2024-11-24",
+            "reachable": true,
+            "direction": "Kista T-bana (Stockholm kn)",
+            "directionFlag": "1"
+        },
+        {
+            "JourneyDetailRef": {
+                "ref": "1|170770|3|1|24112024"
             },
             "JourneyStatus": "P",
             "ProductAtStop": {
@@ -1487,7 +2721,7 @@
                 "operatorCode": "275",
                 "operator": "SL",
                 "admin": "275___",
-                "matchId": "117;117;217"
+                "matchId": "117;117;48"
             },
             "Product": [
                 {
@@ -1517,8 +2751,8 @@
                     "operator": "SL",
                     "admin": "275___",
                     "routeIdxFrom": 0,
-                    "routeIdxTo": 18,
-                    "matchId": "117;117;217"
+                    "routeIdxTo": 19,
+                    "matchId": "117;117;48"
                 }
             ],
             "Notes": {
@@ -1528,7 +2762,7 @@
                         "key": "EG",
                         "type": "A",
                         "routeIdxFrom": 0,
-                        "routeIdxTo": 18,
+                        "routeIdxTo": 19,
                         "txtN": "Lag 2015:953 tillämpas"
                     }
                 ]
@@ -1540,17 +2774,1145 @@
             "stopExtId": "740000764",
             "lon": 17.898781,
             "lat": 59.383271,
-            "time": "02:17:00",
-            "date": "2024-11-23",
+            "time": "13:31:00",
+            "date": "2024-11-24",
             "reachable": true,
             "direction": "Brommaplan T-bana (Stockholm kn)",
             "directionFlag": "1"
+        },
+        {
+            "JourneyDetailRef": {
+                "ref": "1|98183|1|1|24112024"
+            },
+            "JourneyStatus": "P",
+            "ProductAtStop": {
+                "icon": {
+                    "res": "prod_gen"
+                },
+                "operatorInfo": {
+                    "name": "SL",
+                    "nameS": "275",
+                    "nameN": "275",
+                    "nameL": "SL",
+                    "id": "275"
+                },
+                "name": "Länstrafik - Buss 512",
+                "internalName": "Länstrafik - Buss 512",
+                "displayNumber": "512",
+                "num": "512",
+                "line": "512",
+                "lineId": "1275051200001",
+                "catOut": "BLT",
+                "catIn": "BLT",
+                "catCode": "7",
+                "cls": "128",
+                "catOutS": "BLT",
+                "catOutL": "Länstrafik - Buss",
+                "operatorCode": "275",
+                "operator": "SL",
+                "admin": "275___",
+                "matchId": "512;512;31"
+            },
+            "Product": [
+                {
+                    "icon": {
+                        "res": "prod_gen"
+                    },
+                    "operatorInfo": {
+                        "name": "SL",
+                        "nameS": "275",
+                        "nameN": "275",
+                        "nameL": "SL",
+                        "id": "275"
+                    },
+                    "name": "Länstrafik - Buss 512",
+                    "internalName": "Länstrafik - Buss 512",
+                    "displayNumber": "512",
+                    "num": "512",
+                    "line": "512",
+                    "lineId": "1275051200001",
+                    "catOut": "BLT",
+                    "catIn": "BLT",
+                    "catCode": "7",
+                    "cls": "128",
+                    "catOutS": "BLT",
+                    "catOutL": "Länstrafik - Buss",
+                    "operatorCode": "275",
+                    "operator": "SL",
+                    "admin": "275___",
+                    "routeIdxFrom": 0,
+                    "routeIdxTo": 23,
+                    "matchId": "512;512;31"
+                }
+            ],
+            "Notes": {
+                "Note": [
+                    {
+                        "value": "Lag 2015:953 tillämpas",
+                        "key": "EG",
+                        "type": "A",
+                        "routeIdxFrom": 0,
+                        "routeIdxTo": 23,
+                        "txtN": "Lag 2015:953 tillämpas"
+                    }
+                ]
+            },
+            "name": "Länstrafik - Buss 512",
+            "type": "ST",
+            "stop": "Spånga station (Stockholm kn)",
+            "stopid": "A=1@O=Spånga station (Stockholm kn)@X=17898781@Y=59383271@U=1@L=740000764@",
+            "stopExtId": "740000764",
+            "lon": 17.898781,
+            "lat": 59.383271,
+            "time": "13:32:00",
+            "date": "2024-11-24",
+            "reachable": true,
+            "direction": "Solna centrum T-bana",
+            "directionFlag": "1"
+        },
+        {
+            "JourneyDetailRef": {
+                "ref": "1|100837|5|1|24112024"
+            },
+            "JourneyStatus": "P",
+            "ProductAtStop": {
+                "icon": {
+                    "res": "prod_gen"
+                },
+                "operatorInfo": {
+                    "name": "SL",
+                    "nameS": "275",
+                    "nameN": "275",
+                    "nameL": "SL",
+                    "id": "275"
+                },
+                "name": "Länstrafik - Tåg 43",
+                "internalName": "Länstrafik - Tåg 43",
+                "displayNumber": "43",
+                "num": "43",
+                "line": "43",
+                "lineId": "1275000000001",
+                "catOut": "JLT",
+                "catIn": "JLT",
+                "catCode": "4",
+                "cls": "16",
+                "catOutS": "JLT",
+                "catOutL": "Länstrafik - Tåg",
+                "operatorCode": "275",
+                "operator": "SL",
+                "admin": "275___",
+                "matchId": "T24C001 BÅL-NYH LT;T24C001 BÅL-NYH LT;2839"
+            },
+            "Product": [
+                {
+                    "icon": {
+                        "res": "prod_gen"
+                    },
+                    "operatorInfo": {
+                        "name": "SL",
+                        "nameS": "275",
+                        "nameN": "275",
+                        "nameL": "SL",
+                        "id": "275"
+                    },
+                    "name": "Länstrafik - Tåg 43",
+                    "internalName": "Länstrafik - Tåg 43",
+                    "displayNumber": "43",
+                    "num": "43",
+                    "line": "43",
+                    "lineId": "1275000000001",
+                    "catOut": "JLT",
+                    "catIn": "JLT",
+                    "catCode": "4",
+                    "cls": "16",
+                    "catOutS": "JLT",
+                    "catOutL": "Länstrafik - Tåg",
+                    "operatorCode": "275",
+                    "operator": "SL",
+                    "admin": "275___",
+                    "routeIdxFrom": 4,
+                    "routeIdxTo": 17,
+                    "matchId": "T24C001 BÅL-NYH LT;T24C001 BÅL-NYH LT;2839"
+                }
+            ],
+            "Notes": {
+                "Note": [
+                    {
+                        "value": "Endast 2 klass",
+                        "key": "AA",
+                        "type": "A",
+                        "routeIdxFrom": 4,
+                        "routeIdxTo": 17,
+                        "txtN": "Endast 2 klass"
+                    },
+                    {
+                        "value": "Lag 2015:953 tillämpas",
+                        "key": "EG",
+                        "type": "A",
+                        "routeIdxFrom": 4,
+                        "routeIdxTo": 17,
+                        "txtN": "Lag 2015:953 tillämpas"
+                    },
+                    {
+                        "value": "Pendeltåg",
+                        "key": "VH",
+                        "type": "A",
+                        "routeIdxFrom": 4,
+                        "routeIdxTo": 17,
+                        "txtN": "Pendeltåg"
+                    }
+                ]
+            },
+            "name": "Länstrafik - Tåg 43",
+            "type": "ST",
+            "stop": "Spånga station (Stockholm kn)",
+            "stopid": "A=1@O=Spånga station (Stockholm kn)@X=17898781@Y=59383271@U=1@L=740000764@",
+            "stopExtId": "740000764",
+            "lon": 17.898781,
+            "lat": 59.383271,
+            "time": "13:35:00",
+            "date": "2024-11-24",
+            "reachable": true,
+            "direction": "Västerhaninge station (Haninge kn)",
+            "directionFlag": "1"
+        },
+        {
+            "JourneyDetailRef": {
+                "ref": "1|57176|1|1|24112024"
+            },
+            "JourneyStatus": "P",
+            "ProductAtStop": {
+                "icon": {
+                    "res": "prod_gen"
+                },
+                "operatorInfo": {
+                    "name": "SL",
+                    "nameS": "275",
+                    "nameN": "275",
+                    "nameL": "SL",
+                    "id": "275"
+                },
+                "name": "Länstrafik - Buss 179",
+                "internalName": "Länstrafik - Buss 179",
+                "displayNumber": "179",
+                "num": "179",
+                "line": "179",
+                "lineId": "1275017900001",
+                "catOut": "BLT",
+                "catIn": "BLT",
+                "catCode": "7",
+                "cls": "128",
+                "catOutS": "BLT",
+                "catOutL": "Länstrafik - Buss",
+                "operatorCode": "275",
+                "operator": "SL",
+                "admin": "275___",
+                "matchId": "179;179;61"
+            },
+            "Product": [
+                {
+                    "icon": {
+                        "res": "prod_gen"
+                    },
+                    "operatorInfo": {
+                        "name": "SL",
+                        "nameS": "275",
+                        "nameN": "275",
+                        "nameL": "SL",
+                        "id": "275"
+                    },
+                    "name": "Länstrafik - Buss 179",
+                    "internalName": "Länstrafik - Buss 179",
+                    "displayNumber": "179",
+                    "num": "179",
+                    "line": "179",
+                    "lineId": "1275017900001",
+                    "catOut": "BLT",
+                    "catIn": "BLT",
+                    "catCode": "7",
+                    "cls": "128",
+                    "catOutS": "BLT",
+                    "catOutL": "Länstrafik - Buss",
+                    "operatorCode": "275",
+                    "operator": "SL",
+                    "admin": "275___",
+                    "routeIdxFrom": 7,
+                    "routeIdxTo": 17,
+                    "matchId": "179;179;61"
+                }
+            ],
+            "Notes": {
+                "Note": [
+                    {
+                        "value": "Lag 2015:953 tillämpas",
+                        "key": "EG",
+                        "type": "A",
+                        "routeIdxFrom": 7,
+                        "routeIdxTo": 17,
+                        "txtN": "Lag 2015:953 tillämpas"
+                    }
+                ]
+            },
+            "name": "Länstrafik - Buss 179",
+            "type": "ST",
+            "stop": "Spånga station (Stockholm kn)",
+            "stopid": "A=1@O=Spånga station (Stockholm kn)@X=17898781@Y=59383271@U=1@L=740000764@",
+            "stopExtId": "740000764",
+            "lon": 17.898781,
+            "lat": 59.383271,
+            "time": "13:40:00",
+            "date": "2024-11-24",
+            "reachable": true,
+            "direction": "Sollentuna station",
+            "directionFlag": "1"
+        },
+        {
+            "JourneyDetailRef": {
+                "ref": "1|100872|1|1|24112024"
+            },
+            "JourneyStatus": "P",
+            "ProductAtStop": {
+                "icon": {
+                    "res": "prod_gen"
+                },
+                "operatorInfo": {
+                    "name": "SL",
+                    "nameS": "275",
+                    "nameN": "275",
+                    "nameL": "SL",
+                    "id": "275"
+                },
+                "name": "Länstrafik - Tåg 43",
+                "internalName": "Länstrafik - Tåg 43",
+                "displayNumber": "43",
+                "num": "43",
+                "line": "43",
+                "lineId": "1275000000001",
+                "catOut": "JLT",
+                "catIn": "JLT",
+                "catCode": "4",
+                "cls": "16",
+                "catOutS": "JLT",
+                "catOutL": "Länstrafik - Tåg",
+                "operatorCode": "275",
+                "operator": "SL",
+                "admin": "275___",
+                "matchId": "T24C001 BÅL-NYH LT;T24C001 BÅL-NYH LT;2536"
+            },
+            "Product": [
+                {
+                    "icon": {
+                        "res": "prod_gen"
+                    },
+                    "operatorInfo": {
+                        "name": "SL",
+                        "nameS": "275",
+                        "nameN": "275",
+                        "nameL": "SL",
+                        "id": "275"
+                    },
+                    "name": "Länstrafik - Tåg 43",
+                    "internalName": "Länstrafik - Tåg 43",
+                    "displayNumber": "43",
+                    "num": "43",
+                    "line": "43",
+                    "lineId": "1275000000001",
+                    "catOut": "JLT",
+                    "catIn": "JLT",
+                    "catCode": "4",
+                    "cls": "16",
+                    "catOutS": "JLT",
+                    "catOutL": "Länstrafik - Tåg",
+                    "operatorCode": "275",
+                    "operator": "SL",
+                    "admin": "275___",
+                    "routeIdxFrom": 13,
+                    "routeIdxTo": 19,
+                    "matchId": "T24C001 BÅL-NYH LT;T24C001 BÅL-NYH LT;2536"
+                }
+            ],
+            "Notes": {
+                "Note": [
+                    {
+                        "value": "Endast 2 klass",
+                        "key": "AA",
+                        "type": "A",
+                        "routeIdxFrom": 13,
+                        "routeIdxTo": 19,
+                        "txtN": "Endast 2 klass"
+                    },
+                    {
+                        "value": "Lag 2015:953 tillämpas",
+                        "key": "EG",
+                        "type": "A",
+                        "routeIdxFrom": 13,
+                        "routeIdxTo": 19,
+                        "txtN": "Lag 2015:953 tillämpas"
+                    },
+                    {
+                        "value": "Pendeltåg",
+                        "key": "VH",
+                        "type": "A",
+                        "routeIdxFrom": 13,
+                        "routeIdxTo": 19,
+                        "txtN": "Pendeltåg"
+                    }
+                ]
+            },
+            "name": "Länstrafik - Tåg 43",
+            "type": "ST",
+            "stop": "Spånga station (Stockholm kn)",
+            "stopid": "A=1@O=Spånga station (Stockholm kn)@X=17898781@Y=59383271@U=1@L=740000764@",
+            "stopExtId": "740000764",
+            "lon": 17.898781,
+            "lat": 59.383271,
+            "time": "13:40:00",
+            "date": "2024-11-24",
+            "reachable": true,
+            "direction": "Bålsta station (Håbo kn)",
+            "directionFlag": "2"
+        },
+        {
+            "JourneyDetailRef": {
+                "ref": "1|57357|0|1|24112024"
+            },
+            "JourneyStatus": "P",
+            "ProductAtStop": {
+                "icon": {
+                    "res": "prod_gen"
+                },
+                "operatorInfo": {
+                    "name": "SL",
+                    "nameS": "275",
+                    "nameN": "275",
+                    "nameL": "SL",
+                    "id": "275"
+                },
+                "name": "Länstrafik - Buss 179",
+                "internalName": "Länstrafik - Buss 179",
+                "displayNumber": "179",
+                "num": "179",
+                "line": "179",
+                "lineId": "1275017900001",
+                "catOut": "BLT",
+                "catIn": "BLT",
+                "catCode": "7",
+                "cls": "128",
+                "catOutS": "BLT",
+                "catOutL": "Länstrafik - Buss",
+                "operatorCode": "275",
+                "operator": "SL",
+                "admin": "275___",
+                "matchId": "179;179;58"
+            },
+            "Product": [
+                {
+                    "icon": {
+                        "res": "prod_gen"
+                    },
+                    "operatorInfo": {
+                        "name": "SL",
+                        "nameS": "275",
+                        "nameN": "275",
+                        "nameL": "SL",
+                        "id": "275"
+                    },
+                    "name": "Länstrafik - Buss 179",
+                    "internalName": "Länstrafik - Buss 179",
+                    "displayNumber": "179",
+                    "num": "179",
+                    "line": "179",
+                    "lineId": "1275017900001",
+                    "catOut": "BLT",
+                    "catIn": "BLT",
+                    "catCode": "7",
+                    "cls": "128",
+                    "catOutS": "BLT",
+                    "catOutL": "Länstrafik - Buss",
+                    "operatorCode": "275",
+                    "operator": "SL",
+                    "admin": "275___",
+                    "routeIdxFrom": 10,
+                    "routeIdxTo": 17,
+                    "matchId": "179;179;58"
+                }
+            ],
+            "Notes": {
+                "Note": [
+                    {
+                        "value": "Lag 2015:953 tillämpas",
+                        "key": "EG",
+                        "type": "A",
+                        "routeIdxFrom": 10,
+                        "routeIdxTo": 17,
+                        "txtN": "Lag 2015:953 tillämpas"
+                    }
+                ]
+            },
+            "name": "Länstrafik - Buss 179",
+            "type": "ST",
+            "stop": "Spånga station (Stockholm kn)",
+            "stopid": "A=1@O=Spånga station (Stockholm kn)@X=17898781@Y=59383271@U=1@L=740000764@",
+            "stopExtId": "740000764",
+            "lon": 17.898781,
+            "lat": 59.383271,
+            "time": "13:41:00",
+            "date": "2024-11-24",
+            "reachable": true,
+            "direction": "Vällingby T-bana (Stockholm kn)",
+            "directionFlag": "2"
+        },
+        {
+            "JourneyDetailRef": {
+                "ref": "1|41510|0|1|24112024"
+            },
+            "JourneyStatus": "P",
+            "ProductAtStop": {
+                "icon": {
+                    "res": "prod_gen"
+                },
+                "operatorInfo": {
+                    "name": "SL",
+                    "nameS": "275",
+                    "nameN": "275",
+                    "nameL": "SL",
+                    "id": "275"
+                },
+                "name": "Länstrafik - Buss 118",
+                "internalName": "Länstrafik - Buss 118",
+                "displayNumber": "118",
+                "num": "118",
+                "line": "118",
+                "lineId": "1275011800001",
+                "catOut": "BLT",
+                "catIn": "BLT",
+                "catCode": "7",
+                "cls": "128",
+                "catOutS": "BLT",
+                "catOutL": "Länstrafik - Buss",
+                "operatorCode": "275",
+                "operator": "SL",
+                "admin": "275___",
+                "matchId": "118;118;26"
+            },
+            "Product": [
+                {
+                    "icon": {
+                        "res": "prod_gen"
+                    },
+                    "operatorInfo": {
+                        "name": "SL",
+                        "nameS": "275",
+                        "nameN": "275",
+                        "nameL": "SL",
+                        "id": "275"
+                    },
+                    "name": "Länstrafik - Buss 118",
+                    "internalName": "Länstrafik - Buss 118",
+                    "displayNumber": "118",
+                    "num": "118",
+                    "line": "118",
+                    "lineId": "1275011800001",
+                    "catOut": "BLT",
+                    "catIn": "BLT",
+                    "catCode": "7",
+                    "cls": "128",
+                    "catOutS": "BLT",
+                    "catOutL": "Länstrafik - Buss",
+                    "operatorCode": "275",
+                    "operator": "SL",
+                    "admin": "275___",
+                    "routeIdxFrom": 12,
+                    "routeIdxTo": 27,
+                    "matchId": "118;118;26"
+                }
+            ],
+            "Notes": {
+                "Note": [
+                    {
+                        "value": "Lag 2015:953 tillämpas",
+                        "key": "EG",
+                        "type": "A",
+                        "routeIdxFrom": 12,
+                        "routeIdxTo": 27,
+                        "txtN": "Lag 2015:953 tillämpas"
+                    }
+                ]
+            },
+            "name": "Länstrafik - Buss 118",
+            "type": "ST",
+            "stop": "Spånga station (Stockholm kn)",
+            "stopid": "A=1@O=Spånga station (Stockholm kn)@X=17898781@Y=59383271@U=1@L=740000764@",
+            "stopExtId": "740000764",
+            "lon": 17.898781,
+            "lat": 59.383271,
+            "time": "13:45:00",
+            "date": "2024-11-24",
+            "reachable": true,
+            "direction": "Hallonbergen T-bana (Sundbyberg kn)",
+            "directionFlag": "2"
+        },
+        {
+            "JourneyDetailRef": {
+                "ref": "1|15410|2|1|24112024"
+            },
+            "JourneyStatus": "P",
+            "ProductAtStop": {
+                "icon": {
+                    "res": "prod_gen"
+                },
+                "operatorInfo": {
+                    "name": "SL",
+                    "nameS": "275",
+                    "nameN": "275",
+                    "nameL": "SL",
+                    "id": "275"
+                },
+                "name": "Länstrafik - Buss 514",
+                "internalName": "Länstrafik - Buss 514",
+                "displayNumber": "514",
+                "num": "514",
+                "line": "514",
+                "lineId": "1275051400001",
+                "catOut": "BLT",
+                "catIn": "BLT",
+                "catCode": "7",
+                "cls": "128",
+                "catOutS": "BLT",
+                "catOutL": "Länstrafik - Buss",
+                "operatorCode": "275",
+                "operator": "SL",
+                "admin": "275___",
+                "matchId": "514;514;41"
+            },
+            "Product": [
+                {
+                    "icon": {
+                        "res": "prod_gen"
+                    },
+                    "operatorInfo": {
+                        "name": "SL",
+                        "nameS": "275",
+                        "nameN": "275",
+                        "nameL": "SL",
+                        "id": "275"
+                    },
+                    "name": "Länstrafik - Buss 514",
+                    "internalName": "Länstrafik - Buss 514",
+                    "displayNumber": "514",
+                    "num": "514",
+                    "line": "514",
+                    "lineId": "1275051400001",
+                    "catOut": "BLT",
+                    "catIn": "BLT",
+                    "catCode": "7",
+                    "cls": "128",
+                    "catOutS": "BLT",
+                    "catOutL": "Länstrafik - Buss",
+                    "operatorCode": "275",
+                    "operator": "SL",
+                    "admin": "275___",
+                    "routeIdxFrom": 0,
+                    "routeIdxTo": 23,
+                    "matchId": "514;514;41"
+                }
+            ],
+            "Notes": {
+                "Note": [
+                    {
+                        "value": "Lag 2015:953 tillämpas",
+                        "key": "EG",
+                        "type": "A",
+                        "routeIdxFrom": 0,
+                        "routeIdxTo": 23,
+                        "txtN": "Lag 2015:953 tillämpas"
+                    }
+                ]
+            },
+            "name": "Länstrafik - Buss 514",
+            "type": "ST",
+            "stop": "Spånga station (Stockholm kn)",
+            "stopid": "A=1@O=Spånga station (Stockholm kn)@X=17898781@Y=59383271@U=1@L=740000764@",
+            "stopExtId": "740000764",
+            "lon": 17.898781,
+            "lat": 59.383271,
+            "time": "13:46:00",
+            "date": "2024-11-24",
+            "reachable": true,
+            "direction": "Sollentuna station",
+            "directionFlag": "1"
+        },
+        {
+            "JourneyDetailRef": {
+                "ref": "1|68799|2|1|24112024"
+            },
+            "JourneyStatus": "P",
+            "ProductAtStop": {
+                "icon": {
+                    "res": "prod_gen"
+                },
+                "operatorInfo": {
+                    "name": "SL",
+                    "nameS": "275",
+                    "nameN": "275",
+                    "nameL": "SL",
+                    "id": "275"
+                },
+                "name": "Länstrafik - Buss 119",
+                "internalName": "Länstrafik - Buss 119",
+                "displayNumber": "119",
+                "num": "119",
+                "line": "119",
+                "lineId": "1275011900001",
+                "catOut": "BLT",
+                "catIn": "BLT",
+                "catCode": "7",
+                "cls": "128",
+                "catOutS": "BLT",
+                "catOutL": "Länstrafik - Buss",
+                "operatorCode": "275",
+                "operator": "SL",
+                "admin": "275___",
+                "matchId": "119;119;32"
+            },
+            "Product": [
+                {
+                    "icon": {
+                        "res": "prod_gen"
+                    },
+                    "operatorInfo": {
+                        "name": "SL",
+                        "nameS": "275",
+                        "nameN": "275",
+                        "nameL": "SL",
+                        "id": "275"
+                    },
+                    "name": "Länstrafik - Buss 119",
+                    "internalName": "Länstrafik - Buss 119",
+                    "displayNumber": "119",
+                    "num": "119",
+                    "line": "119",
+                    "lineId": "1275011900001",
+                    "catOut": "BLT",
+                    "catIn": "BLT",
+                    "catCode": "7",
+                    "cls": "128",
+                    "catOutS": "BLT",
+                    "catOutL": "Länstrafik - Buss",
+                    "operatorCode": "275",
+                    "operator": "SL",
+                    "admin": "275___",
+                    "routeIdxFrom": 0,
+                    "routeIdxTo": 36,
+                    "matchId": "119;119;32"
+                }
+            ],
+            "Notes": {
+                "Note": [
+                    {
+                        "value": "Lag 2015:953 tillämpas",
+                        "key": "EG",
+                        "type": "A",
+                        "routeIdxFrom": 0,
+                        "routeIdxTo": 36,
+                        "txtN": "Lag 2015:953 tillämpas"
+                    }
+                ]
+            },
+            "name": "Länstrafik - Buss 119",
+            "type": "ST",
+            "stop": "Spånga station (Stockholm kn)",
+            "stopid": "A=1@O=Spånga station (Stockholm kn)@X=17898781@Y=59383271@U=1@L=740000764@",
+            "stopExtId": "740000764",
+            "lon": 17.898781,
+            "lat": 59.383271,
+            "time": "13:46:00",
+            "date": "2024-11-24",
+            "reachable": true,
+            "direction": "Backlura (Stockholm kn)",
+            "directionFlag": "2"
+        },
+        {
+            "JourneyDetailRef": {
+                "ref": "1|170774|0|1|24112024"
+            },
+            "JourneyStatus": "P",
+            "ProductAtStop": {
+                "icon": {
+                    "res": "prod_gen"
+                },
+                "operatorInfo": {
+                    "name": "SL",
+                    "nameS": "275",
+                    "nameN": "275",
+                    "nameL": "SL",
+                    "id": "275"
+                },
+                "name": "Länstrafik - Buss 117",
+                "internalName": "Länstrafik - Buss 117",
+                "displayNumber": "117",
+                "num": "117",
+                "line": "117",
+                "lineId": "1275011700001",
+                "catOut": "BLT",
+                "catIn": "BLT",
+                "catCode": "7",
+                "cls": "128",
+                "catOutS": "BLT",
+                "catOutL": "Länstrafik - Buss",
+                "operatorCode": "275",
+                "operator": "SL",
+                "admin": "275___",
+                "matchId": "117;117;50"
+            },
+            "Product": [
+                {
+                    "icon": {
+                        "res": "prod_gen"
+                    },
+                    "operatorInfo": {
+                        "name": "SL",
+                        "nameS": "275",
+                        "nameN": "275",
+                        "nameL": "SL",
+                        "id": "275"
+                    },
+                    "name": "Länstrafik - Buss 117",
+                    "internalName": "Länstrafik - Buss 117",
+                    "displayNumber": "117",
+                    "num": "117",
+                    "line": "117",
+                    "lineId": "1275011700001",
+                    "catOut": "BLT",
+                    "catIn": "BLT",
+                    "catCode": "7",
+                    "cls": "128",
+                    "catOutS": "BLT",
+                    "catOutL": "Länstrafik - Buss",
+                    "operatorCode": "275",
+                    "operator": "SL",
+                    "admin": "275___",
+                    "routeIdxFrom": 0,
+                    "routeIdxTo": 19,
+                    "matchId": "117;117;50"
+                }
+            ],
+            "Notes": {
+                "Note": [
+                    {
+                        "value": "Lag 2015:953 tillämpas",
+                        "key": "EG",
+                        "type": "A",
+                        "routeIdxFrom": 0,
+                        "routeIdxTo": 19,
+                        "txtN": "Lag 2015:953 tillämpas"
+                    }
+                ]
+            },
+            "name": "Länstrafik - Buss 117",
+            "type": "ST",
+            "stop": "Spånga station (Stockholm kn)",
+            "stopid": "A=1@O=Spånga station (Stockholm kn)@X=17898781@Y=59383271@U=1@L=740000764@",
+            "stopExtId": "740000764",
+            "lon": 17.898781,
+            "lat": 59.383271,
+            "time": "13:46:00",
+            "date": "2024-11-24",
+            "reachable": true,
+            "direction": "Brommaplan T-bana (Stockholm kn)",
+            "directionFlag": "1"
+        },
+        {
+            "JourneyDetailRef": {
+                "ref": "1|57219|0|1|24112024"
+            },
+            "JourneyStatus": "P",
+            "ProductAtStop": {
+                "icon": {
+                    "res": "prod_gen"
+                },
+                "operatorInfo": {
+                    "name": "SL",
+                    "nameS": "275",
+                    "nameN": "275",
+                    "nameL": "SL",
+                    "id": "275"
+                },
+                "name": "Länstrafik - Buss 179",
+                "internalName": "Länstrafik - Buss 179",
+                "displayNumber": "179",
+                "num": "179",
+                "line": "179",
+                "lineId": "1275017900001",
+                "catOut": "BLT",
+                "catIn": "BLT",
+                "catCode": "7",
+                "cls": "128",
+                "catOutS": "BLT",
+                "catOutL": "Länstrafik - Buss",
+                "operatorCode": "275",
+                "operator": "SL",
+                "admin": "275___",
+                "matchId": "179;179;63"
+            },
+            "Product": [
+                {
+                    "icon": {
+                        "res": "prod_gen"
+                    },
+                    "operatorInfo": {
+                        "name": "SL",
+                        "nameS": "275",
+                        "nameN": "275",
+                        "nameL": "SL",
+                        "id": "275"
+                    },
+                    "name": "Länstrafik - Buss 179",
+                    "internalName": "Länstrafik - Buss 179",
+                    "displayNumber": "179",
+                    "num": "179",
+                    "line": "179",
+                    "lineId": "1275017900001",
+                    "catOut": "BLT",
+                    "catIn": "BLT",
+                    "catCode": "7",
+                    "cls": "128",
+                    "catOutS": "BLT",
+                    "catOutL": "Länstrafik - Buss",
+                    "operatorCode": "275",
+                    "operator": "SL",
+                    "admin": "275___",
+                    "routeIdxFrom": 7,
+                    "routeIdxTo": 17,
+                    "matchId": "179;179;63"
+                }
+            ],
+            "Notes": {
+                "Note": [
+                    {
+                        "value": "Lag 2015:953 tillämpas",
+                        "key": "EG",
+                        "type": "A",
+                        "routeIdxFrom": 7,
+                        "routeIdxTo": 17,
+                        "txtN": "Lag 2015:953 tillämpas"
+                    }
+                ]
+            },
+            "name": "Länstrafik - Buss 179",
+            "type": "ST",
+            "stop": "Spånga station (Stockholm kn)",
+            "stopid": "A=1@O=Spånga station (Stockholm kn)@X=17898781@Y=59383271@U=1@L=740000764@",
+            "stopExtId": "740000764",
+            "lon": 17.898781,
+            "lat": 59.383271,
+            "time": "13:50:00",
+            "date": "2024-11-24",
+            "reachable": true,
+            "direction": "Sollentuna station",
+            "directionFlag": "1"
+        },
+        {
+            "JourneyDetailRef": {
+                "ref": "1|100853|5|1|24112024"
+            },
+            "JourneyStatus": "P",
+            "ProductAtStop": {
+                "icon": {
+                    "res": "prod_gen"
+                },
+                "operatorInfo": {
+                    "name": "SL",
+                    "nameS": "275",
+                    "nameN": "275",
+                    "nameL": "SL",
+                    "id": "275"
+                },
+                "name": "Länstrafik - Tåg 43",
+                "internalName": "Länstrafik - Tåg 43",
+                "displayNumber": "43",
+                "num": "43",
+                "line": "43",
+                "lineId": "1275000000001",
+                "catOut": "JLT",
+                "catIn": "JLT",
+                "catCode": "4",
+                "cls": "16",
+                "catOutS": "JLT",
+                "catOutL": "Länstrafik - Tåg",
+                "operatorCode": "275",
+                "operator": "SL",
+                "admin": "275___",
+                "matchId": "T24C001 BÅL-NYH LT;T24C001 BÅL-NYH LT;2541"
+            },
+            "Product": [
+                {
+                    "icon": {
+                        "res": "prod_gen"
+                    },
+                    "operatorInfo": {
+                        "name": "SL",
+                        "nameS": "275",
+                        "nameN": "275",
+                        "nameL": "SL",
+                        "id": "275"
+                    },
+                    "name": "Länstrafik - Tåg 43",
+                    "internalName": "Länstrafik - Tåg 43",
+                    "displayNumber": "43",
+                    "num": "43",
+                    "line": "43",
+                    "lineId": "1275000000001",
+                    "catOut": "JLT",
+                    "catIn": "JLT",
+                    "catCode": "4",
+                    "cls": "16",
+                    "catOutS": "JLT",
+                    "catOutL": "Länstrafik - Tåg",
+                    "operatorCode": "275",
+                    "operator": "SL",
+                    "admin": "275___",
+                    "routeIdxFrom": 6,
+                    "routeIdxTo": 27,
+                    "matchId": "T24C001 BÅL-NYH LT;T24C001 BÅL-NYH LT;2541"
+                }
+            ],
+            "Notes": {
+                "Note": [
+                    {
+                        "value": "Endast 2 klass",
+                        "key": "AA",
+                        "type": "A",
+                        "routeIdxFrom": 6,
+                        "routeIdxTo": 27,
+                        "txtN": "Endast 2 klass"
+                    },
+                    {
+                        "value": "Lag 2015:953 tillämpas",
+                        "key": "EG",
+                        "type": "A",
+                        "routeIdxFrom": 6,
+                        "routeIdxTo": 27,
+                        "txtN": "Lag 2015:953 tillämpas"
+                    },
+                    {
+                        "value": "Pendeltåg",
+                        "key": "VH",
+                        "type": "A",
+                        "routeIdxFrom": 6,
+                        "routeIdxTo": 27,
+                        "txtN": "Pendeltåg"
+                    }
+                ]
+            },
+            "name": "Länstrafik - Tåg 43",
+            "type": "ST",
+            "stop": "Spånga station (Stockholm kn)",
+            "stopid": "A=1@O=Spånga station (Stockholm kn)@X=17898781@Y=59383271@U=1@L=740000764@",
+            "stopExtId": "740000764",
+            "lon": 17.898781,
+            "lat": 59.383271,
+            "time": "13:50:00",
+            "date": "2024-11-24",
+            "reachable": true,
+            "direction": "Nynäshamn station",
+            "directionFlag": "1"
+        },
+        {
+            "JourneyDetailRef": {
+                "ref": "1|57379|0|1|24112024"
+            },
+            "JourneyStatus": "P",
+            "ProductAtStop": {
+                "icon": {
+                    "res": "prod_gen"
+                },
+                "operatorInfo": {
+                    "name": "SL",
+                    "nameS": "275",
+                    "nameN": "275",
+                    "nameL": "SL",
+                    "id": "275"
+                },
+                "name": "Länstrafik - Buss 179",
+                "internalName": "Länstrafik - Buss 179",
+                "displayNumber": "179",
+                "num": "179",
+                "line": "179",
+                "lineId": "1275017900001",
+                "catOut": "BLT",
+                "catIn": "BLT",
+                "catCode": "7",
+                "cls": "128",
+                "catOutS": "BLT",
+                "catOutL": "Länstrafik - Buss",
+                "operatorCode": "275",
+                "operator": "SL",
+                "admin": "275___",
+                "matchId": "179;179;60"
+            },
+            "Product": [
+                {
+                    "icon": {
+                        "res": "prod_gen"
+                    },
+                    "operatorInfo": {
+                        "name": "SL",
+                        "nameS": "275",
+                        "nameN": "275",
+                        "nameL": "SL",
+                        "id": "275"
+                    },
+                    "name": "Länstrafik - Buss 179",
+                    "internalName": "Länstrafik - Buss 179",
+                    "displayNumber": "179",
+                    "num": "179",
+                    "line": "179",
+                    "lineId": "1275017900001",
+                    "catOut": "BLT",
+                    "catIn": "BLT",
+                    "catCode": "7",
+                    "cls": "128",
+                    "catOutS": "BLT",
+                    "catOutL": "Länstrafik - Buss",
+                    "operatorCode": "275",
+                    "operator": "SL",
+                    "admin": "275___",
+                    "routeIdxFrom": 10,
+                    "routeIdxTo": 17,
+                    "matchId": "179;179;60"
+                }
+            ],
+            "Notes": {
+                "Note": [
+                    {
+                        "value": "Lag 2015:953 tillämpas",
+                        "key": "EG",
+                        "type": "A",
+                        "routeIdxFrom": 10,
+                        "routeIdxTo": 17,
+                        "txtN": "Lag 2015:953 tillämpas"
+                    }
+                ]
+            },
+            "name": "Länstrafik - Buss 179",
+            "type": "ST",
+            "stop": "Spånga station (Stockholm kn)",
+            "stopid": "A=1@O=Spånga station (Stockholm kn)@X=17898781@Y=59383271@U=1@L=740000764@",
+            "stopExtId": "740000764",
+            "lon": 17.898781,
+            "lat": 59.383271,
+            "time": "13:51:00",
+            "date": "2024-11-24",
+            "reachable": true,
+            "direction": "Vällingby T-bana (Stockholm kn)",
+            "directionFlag": "2"
         }
     ],
     "TechnicalMessages": {
         "TechnicalMessage": [
             {
-                "value": "2024-11-23 01:29:23",
+                "value": "2024-11-24 12:54:21",
                 "key": "requestTime"
             },
             {
@@ -1562,5 +3924,5 @@
     "serverVersion": "2.45.1",
     "dialectVersion": "2.45",
     "planRtTs": "1970-01-01T01:00:00.000+01:00",
-    "requestId": "5k2cwz6wkwkhy68g"
+    "requestId": "xe4sjz6x68kkw6ck"
 }
