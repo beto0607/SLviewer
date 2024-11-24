@@ -1,5 +1,8 @@
-FROM nginx:latest
+FROM nginx:alpine
 
-WORKDIR /app
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+COPY ./build /usr/share/nginx/html
 
-COPY ./dist .
+EXPOSE 5173
+
+CMD ["nginx", "-g", "daemon off;"]
