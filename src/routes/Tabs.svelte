@@ -10,11 +10,8 @@
 <ul class="tabs">
 	{#each items as item}
 		<li class={activeTabValue === item.value ? 'active' : ''}>
-			<button onclick={handleClick(item.value)}>
+			<button onclick={handleClick(item.value)} style="--bg-color:{item.backgroundColor}">
 				<span>{item.label}</span>
-				{item.departures.length}
-				{activeTabValue}
-				{item.value}
 			</button>
 		</li>
 	{/each}
@@ -57,10 +54,10 @@
 		}
 
 		li.active > button {
-			// color: #495057;
-			// background-color: #fff;
 			font-weight: 700;
 			border-color: #dee2e6 #dee2e6 #fff;
+			background: var(--bg-color);
+			border-color: var(--bg-color) var(--bg-color) white;
 		}
 	}
 </style>

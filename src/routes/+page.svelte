@@ -1,9 +1,9 @@
 <script lang="ts">
 	import { swipe, type SwipeCustomEvent } from 'svelte-gestures';
-	import { type DepartureBoard } from '../domain/api.types';
 	import type { DepartureEntryListItem, TabItem } from '../domain/internal.types';
-	import { getTabComponents, mapDeparturesToListItems, updateDepartureTimes } from '../utils';
+	import { getTabComponents, loadDepartures, updateDepartureTimes } from '../utils';
 	import Tabs from './Tabs.svelte';
+	import Weather from './Weather.svelte';
 
 	let loading = $state(true);
 	let departures: DepartureEntryListItem[] = $state([]);
@@ -33,10 +33,10 @@
 	});
 
 	$effect(() => {
-		syncData();
+		syncSLData();
 		const interval = setInterval(
 			() => {
-				syncData();
+				syncSLData();
 			},
 			1000 * 60 * 20 // 20 mins
 		);
@@ -56,32 +56,14 @@
 		};
 	});
 
-	function syncData(): void {
+	async function syncSLData(): Promise<void> {
 		loading = true;
 
-		fetch(getURL())
-			.then((response) => response.json())
-			.then((departuresResponse: DepartureBoard) => {
-				departures = mapDeparturesToListItems(departuresResponse.Departure);
+		const departures = await loadDepartures();
 
-				const trainDepartures = departures.filter(({ transportType }) => transportType === 'Train');
-				const otherDepartures = departures.filter(({ transportType }) => transportType !== 'Train');
+		items = getTabComponents(departures);
 
-				items = getTabComponents(trainDepartures, otherDepartures);
-
-				loading = false;
-			});
-	}
-
-	function getURL(): string {
-		const isTesting = import.meta.env.VITE_TESTDATA;
-
-		if (isTesting) {
-			return `/response-example.json`;
-		}
-		const spangaId = '740000764';
-		const resRobotKey = import.meta.env.VITE_RESROBOT_KEY;
-		return `https://api.resrobot.se/v2.1/departureBoard?id=${spangaId}&lang=en&format=json&accessId=${resRobotKey}`;
+		loading = false;
 	}
 
 	async function fullscreen(): Promise<void> {
@@ -116,7 +98,9 @@
 </script>
 
 <header>
-	<div class="left"></div>
+	<div class="left">
+		<Weather />
+	</div>
 	<div class="center">
 		<h1>Spånga Station departures</h1>
 	</div>
@@ -124,7 +108,7 @@
 		<div class="time">
 			{time.toLocaleTimeString('sv')}
 		</div>
-		<button onclick={syncData} class={loading ? 'loading' : ''}>
+		<button onclick={syncSLData} class={loading ? 'loading' : ''}>
 			<span class="material-symbols-outlined">sync</span>
 		</button>
 		{#if fullscreenEnabled}
@@ -151,6 +135,7 @@
 		user-select: none; /* Standard syntax */
 		cursor: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjbQg61aAAAADUlEQVQYV2P4//8/IwAI/QL/+TZZdwAAAABJRU5ErkJggg=='),
 			none;
+		font-family: 'Roboto';
 	}
 	:global(button) {
 		background: transparent;
@@ -174,6 +159,11 @@
 		justify-content: center;
 		grid-template-columns: 30% 1fr 30%;
 
+		.left {
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+		}
 		.center {
 			display: flex;
 			justify-content: center;

@@ -19,9 +19,10 @@
 				<span> ➡️ {departure.direction}</span>
 			</div>
 			<div class="date">
-				<span> {departure.time} </span>
-				<br />
-				<span> {departure.date} </span>
+				<span>
+					{departure.time} <br />
+					{departure.date}
+				</span>
 			</div>
 		</li>
 	{/each}
@@ -45,9 +46,9 @@
 			background-color: #0f3539;
 
 			display: grid;
-			grid-template-columns: 50px auto 100px;
+			grid-template-columns: 70px auto 100px;
 			grid-template-rows: 100px 40px;
-			column-gap: 15px;
+			column-gap: 24px;
 
 			&.gone {
 				opacity: 0.4;

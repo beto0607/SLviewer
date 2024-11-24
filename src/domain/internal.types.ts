@@ -9,6 +9,7 @@ export type DepartureEntryListItem = {
     materialIcon: string;
     transportType: 'Train' | 'Bus' | 'Taxi' | 'Plane' | 'T-Bana' | 'Tram' | 'Ferry' | ''
     direction: string
+    directionType: 'unknown' | 'from' | 'to'
     time: string
     date: string
 }
@@ -18,4 +19,5 @@ export type TabItem = {
     value: number;
     component: Component;
     departures: DepartureEntryListItem[];
+    backgroundColor: 'teal' | 'blueviolet' | 'gray'
 };

@@ -5,17 +5,24 @@ import { getTransportType, getTransportLine, getIcon, getMaterialIcon } from "./
 
 export function mapDeparturesToListItems(departures: DepartureEntry[]): DepartureEntryListItem[] {
     const list = departures.map((departure) => {
+        let directionType: DepartureEntryListItem['directionType'] = 'unknown'
+        if (departure.directionFlag === '1') {
+            directionType = 'to'
+        } else if (departure.directionFlag === '2') {
+            directionType = 'from'
+        }
         return {
             gone: false,
             direction: departure.direction,
+            directionType: directionType,
             time: departure.time,
             date: departure.date,
             name: departure.name,
-            line: `${getTransportType(departure)} ${getTransportLine(departure)}`,
+            line: `${getTransportLine(departure)}`,
             relativeTime: '',
             icon: getIcon(departure),
             materialIcon: getMaterialIcon(departure),
-            transportType: getTransportType(departure)
+            transportType: getTransportType(departure),
         };
     });
     return updateDepartureTimes(list)
