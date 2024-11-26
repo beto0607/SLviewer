@@ -6,7 +6,7 @@
 	import Weather from './Weather.svelte';
 
 	let loading = $state(true);
-	let departures: DepartureEntryListItem[] = $state([]);
+	let departures = $state<DepartureEntryListItem[]>([]);
 
 	let time = $state(new Date());
 
@@ -53,6 +53,7 @@
 	$effect(() => {
 		const interval = setInterval(() => {
 			departures = updateDepartureTimes(departures);
+			console.log(departures);
 		}, 10000);
 
 		return () => {
@@ -104,7 +105,7 @@
 		<Weather />
 	</div>
 	<div class="center">
-		<h1>Spånga Station departures</h1>
+		<h1>Spånga Station departures ❤️</h1>
 	</div>
 	<div class="right">
 		<div class="time">

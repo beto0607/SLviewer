@@ -1,6 +1,5 @@
 import type { DepartureBoard } from "../domain/api.types";
 import type { DepartureEntryListItem } from "../domain/internal.types";
-import { isTesting } from "./api.utils";
 import { mapDeparturesToListItems } from "./departures.utils";
 
 export async function loadDepartures(): Promise<DepartureEntryListItem[]> {
@@ -13,7 +12,7 @@ export async function loadDepartures(): Promise<DepartureEntryListItem[]> {
 }
 
 function getURL(): string {
-    if (isTesting) {
+    if (import.meta.env.VITE_TEST === 'true') {
         return `/response-example.json`;
     }
     const spangaId = '740000764';

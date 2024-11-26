@@ -1,7 +1,6 @@
-import type { WeatherDTO } from "../domain";
-import { isTesting } from "./api.utils";
+import type { WeatherDto } from "../domain";
 
-export async function loadWeather(): Promise<WeatherDTO> {
+export async function loadWeather(): Promise<WeatherDto> {
     const url = getURL()
 
     const response = await fetch(url)
@@ -10,7 +9,7 @@ export async function loadWeather(): Promise<WeatherDTO> {
 }
 
 function getURL(): string {
-    if (isTesting) {
+    if (import.meta.env.VITE_TEST === 'true') {
         return `/weather-response.json`;
     }
     const apiKey = import.meta.env.VITE_OPENWEATHER_KEY;
@@ -20,7 +19,7 @@ function getURL(): string {
     return url
 }
 
-export function getIconUrl(weatherData: WeatherDTO): string {
+export function getIconUrl(weatherData: WeatherDto): string {
     const icon = weatherData.weather.at(0)?.icon
     if (!icon) {
         return ''
