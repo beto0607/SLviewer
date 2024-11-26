@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { swipe, type SwipeCustomEvent } from 'svelte-gestures';
-	import type { DepartureEntryListItem, TabItem } from '../domain/internal.types';
-	import { getTabComponents, loadDepartures, updateDepartureTimes } from '../utils';
+	import type { DepartureEntryListItem } from '../domain/internal.types';
+	import { getTabComponents, loadDepartures, isNightTime, updateDepartureTimes } from '../utils';
 	import Tabs from './Tabs.svelte';
 	import Weather from './Weather.svelte';
 
@@ -10,7 +10,8 @@
 
 	let time = $state(new Date());
 
-	let items = $state<TabItem[]>(getTabComponents());
+	let items = $derived.by(() => getTabComponents(departures));
+
 	let activeTabItem = $state(0);
 
 	let fullscreenActive = $state(false);
@@ -22,6 +23,7 @@
 			fullscreen();
 		});
 	});
+
 	$effect(() => {
 		const interval = setInterval(() => {
 			time = new Date();
@@ -36,7 +38,9 @@
 		syncSLData();
 		const interval = setInterval(
 			() => {
-				syncSLData();
+				if (!isNightTime()) {
+					syncSLData();
+				}
 			},
 			1000 * 60 * 20 // 20 mins
 		);
@@ -59,9 +63,7 @@
 	async function syncSLData(): Promise<void> {
 		loading = true;
 
-		const departures = await loadDepartures();
-
-		items = getTabComponents(departures);
+		departures = await loadDepartures();
 
 		loading = false;
 	}

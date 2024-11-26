@@ -30,7 +30,7 @@ export function mapDeparturesToListItems(departures: DepartureEntry[]): Departur
 
 export function updateDepartureTimes(departures: DepartureEntryListItem[]): DepartureEntryListItem[] {
     const deltaRemoval = dayjs(new Date()).subtract(10, 'minute')
-    return departures
+    const entryItems = departures
         .filter((departure) => {
             const departureTime = dayjs(departure.date + 'T' + departure.time);
             return (departureTime.isAfter(deltaRemoval))
@@ -44,4 +44,5 @@ export function updateDepartureTimes(departures: DepartureEntryListItem[]): Depa
                 relativeTime: relativeDepartureTime,
             };
         })
+    return entryItems
 }

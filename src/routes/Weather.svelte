@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { WeatherDto } from '../domain';
-	import { getIconUrl, loadWeather } from '../utils';
+	import { getIconUrl, loadWeather, isNightTime } from '../utils';
 
 	let loading = $state(true);
 	let weatherData = $state<WeatherDto | undefined>(undefined);
@@ -18,7 +18,9 @@
 		syncWeatherData();
 		const interval = setInterval(
 			() => {
-				syncWeatherData();
+				if (!isNightTime()) {
+					syncWeatherData();
+				}
 			},
 			1000 * 60 * 30 // 30 mins
 		);
