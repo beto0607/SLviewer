@@ -1,0 +1,55 @@
+name: Docker publish
+
+on:
+  push:
+    branches:
+      - main
+
+env:
+  REPO_NAME: "sl-viewer"
+  ENV_REPO: "admin/application-environments"
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v3
+
+      - name: Set up Docker BuildX
+        uses: docker/setup-buildx-action@v3
+
+      - name: Set outputs
+        id: sha 
+        run: | 
+          sha_short=$(git rev-parse --short HEAD)
+          echo "sha_short = $sha_short"
+          echo "sha_short=$sha_short" >> $GITHUB_OUTPUT
+
+      - name: Build and push
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: ./Dockerfile
+          platforms: |
+            linux/amd64
+            linux/arm64
+          push: true
+          tags: |
+            ${{ vars.DOCKER_REGISTRY }}/${{ env.REPO_NAME }}:${{ steps.sha.outputs.sha_short }}
+            ${{ vars.DOCKER_REGISTRY }}/${{ env.REPO_NAME }}:latest
+
+      - name: Open PR in Environment Repository for new App Version
+        env:
+          GITEA_HOST: "https://gitea.ralb.dev"
+          WORKFLOW: 'new-app-version.yaml' 
+          TOKEN: ${{ secrets.WORKFLOW_DISPATCH_TOKEN }}
+        run: |
+          curl -X POST "$GITEA_HOST/api/v1/repos/${{ env.ENV_REPO }}/actions/workflows/$WORKFLOW/dispatches" \
+            -H "Authorization: token $TOKEN" \
+            -H "Content-Type: application/json" \
+            -d '{"ref": "main", "inputs": {"tag_name": "${{ steps.sha.outputs.sha_short }}", "app_repo": "${{ env.REPO_NAME }}", "image": "${{ vars.DOCKER_REGISTRY }}/${{ env.REPO_NAME }}:${{ steps.sha.outputs.sha_short }}"}}'

@@ -1,4 +1,5 @@
 import type { WeatherDto } from "../domain";
+import {env} from '$env/dynamic/public';
 
 export async function loadWeather(): Promise<WeatherDto> {
     const url = getURL()
@@ -9,10 +10,10 @@ export async function loadWeather(): Promise<WeatherDto> {
 }
 
 function getURL(): string {
-    if (import.meta.env.VITE_TEST === 'true') {
+    if (env.PUBLIC_IN_TEST === 'true' || import.meta.env.VITE_TEST === 'true') {
         return `/weather-response.json`;
     }
-    const apiKey = import.meta.env.VITE_OPENWEATHER_KEY;
+    const apiKey = env.PUBLIC_OPENWEATHER_KEY || import.meta.env.VITE_OPENWEATHER_KEY;
     const lat = 59.380490624937295;
     const lon = 17.906850231350553
     const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric&lang-en`;

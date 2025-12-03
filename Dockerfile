@@ -1,8 +1,18 @@
-FROM nginx:alpine
+FROM node:current-alpine AS builder
+RUN npm i -g pnpm
+WORKDIR /app
+COPY package*.json .
+COPY pnpm-*.yaml .
+RUN pnpm i
+COPY . .
+RUN pnpm run build
+RUN pnpm prune --production
 
-COPY nginx.conf /etc/nginx/conf.d/default.conf
-COPY ./build /usr/share/nginx/html
-
-EXPOSE 5173
-
-CMD ["nginx", "-g", "daemon off;"]
+FROM node:current-alpine
+WORKDIR /app
+COPY --from=builder /app/build build/
+COPY --from=builder /app/node_modules node_modules/
+COPY package.json .
+EXPOSE 3000
+ENV NODE_ENV=production
+CMD [ "node", "build" ]
