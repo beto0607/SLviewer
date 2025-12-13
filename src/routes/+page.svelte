@@ -4,6 +4,7 @@
 	import { getTabComponents, loadDepartures, isNightTime, updateDepartureTimes } from '../utils';
 	import Tabs from './Tabs.svelte';
 	import Weather from './Weather.svelte';
+	import Lights from './Lights.svelte';
 
 	let loading = $state(true);
 	let departures = $state<DepartureEntryListItem[]>([]);
@@ -108,6 +109,7 @@
 		<h1>Spånga Station departures ❤️</h1>
 	</div>
 	<div class="right">
+		<Lights />
 		<div class="time">
 			{time.toLocaleTimeString('sv')}
 		</div>
@@ -170,6 +172,7 @@
 		.center {
 			display: flex;
 			justify-content: center;
+			white-space: nowrap;
 		}
 		.right {
 			display: flex;
