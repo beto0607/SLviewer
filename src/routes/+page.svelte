@@ -106,7 +106,7 @@
 		<Weather />
 	</div>
 	<div class="center">
-		<h1>Spånga Station departures ❤️</h1>
+		<h1>Huvudsta Station departures ❤️</h1>
 	</div>
 	<div class="right">
 		<Lights />

@@ -16,7 +16,7 @@ function getURL(): string {
     if (env.PUBLIC_IN_TEST === 'true' || import.meta.env.VITE_TEST === 'true') {
         return `/response-example.json`;
     }
-    const spangaId = '740000764';
+    const stationId = '740021671'; // Huvudsta
     const resRobotKey = env.PUBLIC_RESROBOT_KEY || import.meta.env.VITE_RESROBOT_KEY;
-    return `https://api.resrobot.se/v2.1/departureBoard?id=${spangaId}&lang=en&format=json&accessId=${resRobotKey}`;
+    return `https://api.resrobot.se/v2.1/departureBoard?id=${stationId}&lang=en&format=json&accessId=${resRobotKey}`;
 }

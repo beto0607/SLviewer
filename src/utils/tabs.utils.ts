@@ -1,6 +1,8 @@
 import type { DepartureEntryListItem, TabItem } from "../domain/internal.types";
 import DeparturesTab from '../routes/departures-tab.svelte';
 
+const TRANSPORT_OF_INTEREST: DepartureEntryListItem['transportType'] = 'T-Bana'
+
 export function getTabComponents(departures: DepartureEntryListItem[] = []): TabItem[] {
     const trainsToCity = getTrainsToCity(departures)
     const trainsFromCity = getTrainsFromCity(departures)
@@ -14,15 +16,15 @@ export function getTabComponents(departures: DepartureEntryListItem[] = []): Tab
 }
 
 export function getTrainsToCity(departures: DepartureEntryListItem[]): DepartureEntryListItem[] {
-    return departures.filter(({ transportType, directionType }) => transportType === 'Train'
-        && (directionType === 'to' || directionType === 'unknown'))
-}
-
-export function getTrainsFromCity(departures: DepartureEntryListItem[]): DepartureEntryListItem[] {
-    return departures.filter(({ transportType, directionType }) => transportType === 'Train'
+    return departures.filter(({ transportType, directionType }) => transportType === TRANSPORT_OF_INTEREST
         && (directionType === 'from' || directionType === 'unknown'))
 }
 
+export function getTrainsFromCity(departures: DepartureEntryListItem[]): DepartureEntryListItem[] {
+    return departures.filter(({ transportType, directionType }) => transportType ===TRANSPORT_OF_INTEREST 
+        && (directionType === 'to' || directionType === 'unknown'))
+}
+
 export function getNonTrains(departures: DepartureEntryListItem[]): DepartureEntryListItem[] {
-    return departures.filter(({ transportType }) => transportType !== 'Train')
+    return departures.filter(({ transportType }) => transportType !== TRANSPORT_OF_INTEREST)
 }

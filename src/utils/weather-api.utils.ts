@@ -14,8 +14,8 @@ function getURL(): string {
         return `/weather-response.json`;
     }
     const apiKey = env.PUBLIC_OPENWEATHER_KEY || import.meta.env.VITE_OPENWEATHER_KEY;
-    const lat = 59.380490624937295;
-    const lon = 17.906850231350553
+    const lat = 59.351288673889314;
+    const lon = 17.990749514922168;
     const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric&lang-en`;
     return url
 }
